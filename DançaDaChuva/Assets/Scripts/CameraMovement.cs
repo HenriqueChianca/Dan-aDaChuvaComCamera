@@ -5,19 +5,26 @@ using UnityEngine.UI;
 public class CameraMovement : MonoBehaviour
 {
     public ParticleSystem particleSystem;
-    public RawImage displayImage; // Exibir imagem da câmera na interface
+    public RawImage displayImage; // Exibe a imagem da câmera na interface
     private WebCamTexture webCamTexture;
     private Color32[] previousFrame;
     private bool isActive = false;
     private float inactivityTimer = 0f;
-    public float inactivityThreshold = 3f; // Tempo antes de desativar partículas
-    public int movementThreshold = 1000; // Pixels alterados para ativar partículas
+
+    [Tooltip("Tempo (em segundos) antes de desativar as partículas em caso de inatividade")]
+    public float inactivityThreshold = 3f;
+
+    [Tooltip("Quantidade mínima de pixels alterados para ativar as partículas")]
+    public int movementThreshold = 1000;
 
     void Start()
     {
         StartCoroutine(InitializeCamera());
         if (particleSystem != null)
         {
+            // Garante que as partículas estejam desativadas no início
+            var emission = particleSystem.emission;
+            emission.enabled = false;
             particleSystem.Stop();
         }
     }
@@ -26,15 +33,18 @@ public class CameraMovement : MonoBehaviour
     {
         if (WebCamTexture.devices.Length > 0)
         {
+            // Seleciona a primeira câmera disponível
             webCamTexture = new WebCamTexture(WebCamTexture.devices[0].name);
             webCamTexture.Play();
             yield return new WaitUntil(() => webCamTexture.width > 100);
+
             Debug.Log("✅ Câmera inicializada!");
             previousFrame = new Color32[webCamTexture.width * webCamTexture.height];
 
             if (displayImage != null)
             {
                 displayImage.texture = webCamTexture;
+                displayImage.material.mainTexture = webCamTexture;
             }
         }
         else
@@ -45,7 +55,9 @@ public class CameraMovement : MonoBehaviour
 
     void Update()
     {
-        if (webCamTexture == null || !webCamTexture.isPlaying) return;
+        if (webCamTexture == null || !webCamTexture.isPlaying)
+            return;
+
         DetectCameraMovement();
 
         if (isActive)
@@ -79,6 +91,7 @@ public class CameraMovement : MonoBehaviour
         }
 
         previousFrame = (Color32[])currentFrame.Clone();
+
         Debug.Log("📸 Pixels alterados: " + diffCount);
 
         if (diffCount > movementThreshold)
@@ -95,6 +108,8 @@ public class CameraMovement : MonoBehaviour
             inactivityTimer = 0f;
             if (particleSystem != null)
             {
+                var emission = particleSystem.emission;
+                emission.enabled = true;
                 particleSystem.Play();
             }
         }
@@ -107,6 +122,8 @@ public class CameraMovement : MonoBehaviour
             isActive = false;
             if (particleSystem != null)
             {
+                var emission = particleSystem.emission;
+                emission.enabled = false;
                 particleSystem.Stop();
             }
         }
