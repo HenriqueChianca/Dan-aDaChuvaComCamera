@@ -16,8 +16,10 @@ public class SpriteColorController : MonoBehaviour
     [System.Serializable]
     public class SpriteColorInfo
     {
-        public SpriteRenderer spriteRenderer; // Referência ao SpriteRenderer
+        public SpriteRenderer spriteRenderer;             // Referência ao SpriteRenderer principal
         public List<ColorPhase> colorPhases = new List<ColorPhase>(); // Lista de fases para este sprite
+        [Tooltip("MeshRenderer do filho que será ativado quando o sprite avançar de fase e desativado quando voltar ao estado inicial.")]
+        public MeshRenderer childMeshRenderer;            // Mesh do objeto filho (inicialmente desativada)
     }
 
     public List<SpriteColorInfo> spriteColorList = new List<SpriteColorInfo>();
@@ -43,7 +45,7 @@ public class SpriteColorController : MonoBehaviour
 
     void Start()
     {
-        // Inicializa cada sprite e salva sua posição original
+        // Inicializa cada sprite e salva sua posição original.
         foreach (var spriteInfo in spriteColorList)
         {
             if (spriteInfo.spriteRenderer != null)
@@ -51,10 +53,17 @@ public class SpriteColorController : MonoBehaviour
                 collisionCounts[spriteInfo.spriteRenderer] = 0;
                 currentPhaseIndex[spriteInfo.spriteRenderer] = 0;
                 originalPositions[spriteInfo.spriteRenderer] = spriteInfo.spriteRenderer.transform.position;
+
+                // Define o estado inicial conforme a primeira fase, se houver
                 if (spriteInfo.colorPhases.Count > 0)
                 {
-                    // Define o estado inicial conforme a primeira fase
                     spriteInfo.spriteRenderer.color = spriteInfo.colorPhases[0].targetColor;
+                }
+
+                // Desativa a mesh do filho no início (se existir)
+                if (spriteInfo.childMeshRenderer != null)
+                {
+                    spriteInfo.childMeshRenderer.enabled = false;
                 }
             }
         }
@@ -81,9 +90,17 @@ public class SpriteColorController : MonoBehaviour
                     newScale.y = phase.newScaleY;
                     spriteInfo.spriteRenderer.transform.localScale = newScale;
                     spriteInfo.spriteRenderer.transform.position = originalPositions[spriteInfo.spriteRenderer];
+
                     // Reinicia o contador de colisões para este sprite
                     collisionCounts[spriteInfo.spriteRenderer] = 0;
+
                     Debug.Log("Sprite regrediu para a fase: " + currentPhaseIndex[spriteInfo.spriteRenderer]);
+
+                    // Se regressão completa (fase 0), desativa a mesh do filho, se houver
+                    if (currentPhaseIndex[spriteInfo.spriteRenderer] == 0 && spriteInfo.childMeshRenderer != null)
+                    {
+                        spriteInfo.childMeshRenderer.enabled = false;
+                    }
                 }
             }
             collisionResetTimer = 0f;
@@ -153,9 +170,7 @@ public class SpriteColorController : MonoBehaviour
     // Chamado quando partículas colidem com este objeto
     void OnParticleCollision(GameObject other)
     {
-        hasCollided = true; // Registra que houve ao menos uma colisão
-        collisionResetTimer = 0f;
-
+        hasCollided = true;
         foreach (var spriteInfo in spriteColorList)
         {
             if (collisionCounts.ContainsKey(spriteInfo.spriteRenderer))
@@ -171,7 +186,7 @@ public class SpriteColorController : MonoBehaviour
                         // Avança para a próxima fase
                         currentPhaseIndex[spriteInfo.spriteRenderer]++;
 
-                        // Se houver uma nova fase, atualiza a aparência
+                        // Se houver uma nova fase para mostrar, atualiza a aparência
                         if (currentPhaseIndex[spriteInfo.spriteRenderer] < spriteInfo.colorPhases.Count)
                         {
                             ColorPhase newPhase = spriteInfo.colorPhases[currentPhaseIndex[spriteInfo.spriteRenderer]];
@@ -186,8 +201,15 @@ public class SpriteColorController : MonoBehaviour
                             spriteInfo.spriteRenderer.transform.position = originalPositions[spriteInfo.spriteRenderer];
                         }
                         Debug.Log("Sprite atualizado para a fase: " + currentPhaseIndex[spriteInfo.spriteRenderer]);
+
                         // Reinicia o contador de colisões para este sprite
                         collisionCounts[spriteInfo.spriteRenderer] = 0;
+
+                        // Se avançou de fase (ou seja, não está na fase 0), ativa a mesh do filho (se houver)
+                        if (currentPhaseIndex[spriteInfo.spriteRenderer] > 0 && spriteInfo.childMeshRenderer != null)
+                        {
+                            spriteInfo.childMeshRenderer.enabled = true;
+                        }
                     }
                 }
             }

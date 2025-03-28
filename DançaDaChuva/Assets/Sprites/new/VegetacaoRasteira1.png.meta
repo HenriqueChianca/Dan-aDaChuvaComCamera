@@ -1,0 +1,3805 @@
+fileFormatVersion: 2
+guid: 56c888405606d3b43be792a37f3b0973
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2447423909801682457
+    second: VegetacaoRasteira1_0
+  - first:
+      213: -6101482081202568483
+    second: VegetacaoRasteira1_1
+  - first:
+      213: -8671835806724247818
+    second: VegetacaoRasteira1_2
+  - first:
+      213: 6489796057392910374
+    second: VegetacaoRasteira1_3
+  - first:
+      213: -5029522029967467848
+    second: VegetacaoRasteira1_4
+  - first:
+      213: -21304399147564841
+    second: VegetacaoRasteira1_5
+  - first:
+      213: 3538911308157082653
+    second: VegetacaoRasteira1_6
+  - first:
+      213: -5261958129561996474
+    second: VegetacaoRasteira1_7
+  - first:
+      213: 5359085323611915127
+    second: VegetacaoRasteira1_8
+  - first:
+      213: -3284501840797099843
+    second: VegetacaoRasteira1_9
+  - first:
+      213: -8223308630739489537
+    second: VegetacaoRasteira1_10
+  - first:
+      213: -8689990726779930481
+    second: VegetacaoRasteira1_11
+  - first:
+      213: -7778406397667301120
+    second: VegetacaoRasteira1_12
+  - first:
+      213: 1935346647341412378
+    second: VegetacaoRasteira1_13
+  - first:
+      213: -623939435545993926
+    second: VegetacaoRasteira1_14
+  - first:
+      213: -4603743328906094040
+    second: VegetacaoRasteira1_15
+  - first:
+      213: 5932913124483202286
+    second: VegetacaoRasteira1_16
+  - first:
+      213: 8901040061882481273
+    second: VegetacaoRasteira1_17
+  - first:
+      213: 7306843251237898648
+    second: VegetacaoRasteira1_18
+  - first:
+      213: -433798560036040110
+    second: VegetacaoRasteira1_19
+  - first:
+      213: -711496072099851780
+    second: VegetacaoRasteira1_20
+  - first:
+      213: -8666900139134021075
+    second: VegetacaoRasteira1_21
+  - first:
+      213: 94615744949733610
+    second: VegetacaoRasteira1_22
+  - first:
+      213: 6502689692943598221
+    second: VegetacaoRasteira1_23
+  - first:
+      213: 4977900881602554449
+    second: VegetacaoRasteira1_24
+  - first:
+      213: -1642395953246259102
+    second: VegetacaoRasteira1_25
+  - first:
+      213: -2586489842400002962
+    second: VegetacaoRasteira1_26
+  - first:
+      213: -7966196607894509106
+    second: VegetacaoRasteira1_27
+  - first:
+      213: 3743659621413951770
+    second: VegetacaoRasteira1_28
+  - first:
+      213: -4334429857105925620
+    second: VegetacaoRasteira1_29
+  - first:
+      213: -1414061960044776635
+    second: VegetacaoRasteira1_30
+  - first:
+      213: -8108980517399913565
+    second: VegetacaoRasteira1_31
+  - first:
+      213: -5993812382615269038
+    second: VegetacaoRasteira1_32
+  - first:
+      213: 3595127437287958540
+    second: VegetacaoRasteira1_33
+  - first:
+      213: 3396540960235335164
+    second: VegetacaoRasteira1_34
+  - first:
+      213: 970497855556133002
+    second: VegetacaoRasteira1_35
+  - first:
+      213: 8483682006614821403
+    second: VegetacaoRasteira1_36
+  - first:
+      213: 4396531514947385827
+    second: VegetacaoRasteira1_37
+  - first:
+      213: -7437845464994748357
+    second: VegetacaoRasteira1_38
+  - first:
+      213: 658993541409088417
+    second: VegetacaoRasteira1_39
+  - first:
+      213: 4407007341840766578
+    second: VegetacaoRasteira1_40
+  - first:
+      213: 6787890956435094285
+    second: VegetacaoRasteira1_41
+  - first:
+      213: 8861793301599798826
+    second: VegetacaoRasteira1_42
+  - first:
+      213: 3554915208517480624
+    second: VegetacaoRasteira1_43
+  - first:
+      213: 6661132037515355572
+    second: VegetacaoRasteira1_44
+  - first:
+      213: 6793137575618095243
+    second: VegetacaoRasteira1_45
+  - first:
+      213: -7605408521063190066
+    second: VegetacaoRasteira1_46
+  - first:
+      213: -4354576571545245532
+    second: VegetacaoRasteira1_47
+  - first:
+      213: -5854115341459299650
+    second: VegetacaoRasteira1_48
+  - first:
+      213: -4455824452541144432
+    second: VegetacaoRasteira1_49
+  - first:
+      213: 3596282370009057246
+    second: VegetacaoRasteira1_50
+  - first:
+      213: -2656829765642927644
+    second: VegetacaoRasteira1_51
+  - first:
+      213: 1454735185099064298
+    second: VegetacaoRasteira1_52
+  - first:
+      213: 3168001809017363835
+    second: VegetacaoRasteira1_53
+  - first:
+      213: -5711278835143124078
+    second: VegetacaoRasteira1_54
+  - first:
+      213: -6294846555064152796
+    second: VegetacaoRasteira1_55
+  - first:
+      213: 1254136657081326432
+    second: VegetacaoRasteira1_56
+  - first:
+      213: 3171374931702573060
+    second: VegetacaoRasteira1_57
+  - first:
+      213: -7937787452260653939
+    second: VegetacaoRasteira1_58
+  - first:
+      213: -3903808064074236566
+    second: VegetacaoRasteira1_59
+  - first:
+      213: 6906937471902372741
+    second: VegetacaoRasteira1_60
+  - first:
+      213: 4701525986584990686
+    second: VegetacaoRasteira1_61
+  - first:
+      213: 4675591459891161860
+    second: VegetacaoRasteira1_62
+  - first:
+      213: 5727081728357877688
+    second: VegetacaoRasteira1_63
+  - first:
+      213: 7883344955867599065
+    second: VegetacaoRasteira1_64
+  - first:
+      213: -4456996131941004415
+    second: VegetacaoRasteira1_65
+  - first:
+      213: 5811959145839791257
+    second: VegetacaoRasteira1_66
+  - first:
+      213: 3974091005264257428
+    second: VegetacaoRasteira1_67
+  - first:
+      213: -4286695075826839061
+    second: VegetacaoRasteira1_68
+  - first:
+      213: 6388479135599299771
+    second: VegetacaoRasteira1_69
+  - first:
+      213: -3281949555333959857
+    second: VegetacaoRasteira1_70
+  - first:
+      213: 3877151552023260551
+    second: VegetacaoRasteira1_71
+  - first:
+      213: 1832272941077421914
+    second: VegetacaoRasteira1_72
+  - first:
+      213: -2049429191725932732
+    second: VegetacaoRasteira1_73
+  - first:
+      213: -6577194908834191307
+    second: VegetacaoRasteira1_74
+  - first:
+      213: -1719568058209187717
+    second: VegetacaoRasteira1_75
+  - first:
+      213: 6843993792043119113
+    second: VegetacaoRasteira1_76
+  - first:
+      213: -6155798220082869208
+    second: VegetacaoRasteira1_77
+  - first:
+      213: 6242825924078834654
+    second: VegetacaoRasteira1_78
+  - first:
+      213: 5937426610038510004
+    second: VegetacaoRasteira1_79
+  - first:
+      213: -7886961827495315209
+    second: VegetacaoRasteira1_80
+  - first:
+      213: -5951353302969020000
+    second: VegetacaoRasteira1_81
+  - first:
+      213: 3242889288348647748
+    second: VegetacaoRasteira1_82
+  - first:
+      213: -637081002817695725
+    second: VegetacaoRasteira1_83
+  - first:
+      213: 1310665294056547839
+    second: VegetacaoRasteira1_84
+  - first:
+      213: 7056799050251876804
+    second: VegetacaoRasteira1_85
+  - first:
+      213: 8587380715205448178
+    second: VegetacaoRasteira1_86
+  - first:
+      213: -3689986216496344613
+    second: VegetacaoRasteira1_87
+  - first:
+      213: -1003321409922586497
+    second: VegetacaoRasteira1_88
+  - first:
+      213: 7942377365998087979
+    second: VegetacaoRasteira1_89
+  - first:
+      213: -5626141824763513229
+    second: VegetacaoRasteira1_90
+  - first:
+      213: 7707461041630015646
+    second: VegetacaoRasteira1_91
+  - first:
+      213: 3172626435037675974
+    second: VegetacaoRasteira1_92
+  - first:
+      213: 8126678594089859760
+    second: VegetacaoRasteira1_93
+  - first:
+      213: -8525551254498501134
+    second: VegetacaoRasteira1_94
+  - first:
+      213: 3217547691246772937
+    second: VegetacaoRasteira1_95
+  - first:
+      213: -4699569670664957718
+    second: VegetacaoRasteira1_96
+  - first:
+      213: 2746354032725770126
+    second: VegetacaoRasteira1_97
+  - first:
+      213: 8639258923799051137
+    second: VegetacaoRasteira1_98
+  - first:
+      213: 3364114873881863173
+    second: VegetacaoRasteira1_99
+  - first:
+      213: -947825333823066775
+    second: VegetacaoRasteira1_100
+  - first:
+      213: 4752677906093812649
+    second: VegetacaoRasteira1_101
+  - first:
+      213: 52372935345049992
+    second: VegetacaoRasteira1_102
+  - first:
+      213: -6930809703273535052
+    second: VegetacaoRasteira1_103
+  - first:
+      213: -8474921927162517465
+    second: VegetacaoRasteira1_104
+  - first:
+      213: 2240835344313925796
+    second: VegetacaoRasteira1_105
+  - first:
+      213: -1808014936577764897
+    second: VegetacaoRasteira1_106
+  - first:
+      213: -2664859042074125578
+    second: VegetacaoRasteira1_107
+  - first:
+      213: 1365571660109903855
+    second: VegetacaoRasteira1_108
+  - first:
+      213: -98021779429545646
+    second: VegetacaoRasteira1_109
+  - first:
+      213: 6072929818701452323
+    second: VegetacaoRasteira1_110
+  - first:
+      213: -9095438780972975394
+    second: VegetacaoRasteira1_111
+  - first:
+      213: 1730805849416308204
+    second: VegetacaoRasteira1_112
+  - first:
+      213: -1989741861812168832
+    second: VegetacaoRasteira1_113
+  - first:
+      213: -5786619289092712071
+    second: VegetacaoRasteira1_114
+  - first:
+      213: 3029311966188831425
+    second: VegetacaoRasteira1_115
+  - first:
+      213: -4547021454337876726
+    second: VegetacaoRasteira1_116
+  - first:
+      213: 9121746252311182946
+    second: VegetacaoRasteira1_117
+  - first:
+      213: -4348204207134361328
+    second: VegetacaoRasteira1_118
+  - first:
+      213: 6000609929072630364
+    second: VegetacaoRasteira1_119
+  - first:
+      213: -4330907388378148962
+    second: VegetacaoRasteira1_120
+  - first:
+      213: 8049705186680229011
+    second: VegetacaoRasteira1_121
+  - first:
+      213: 8605064685961190999
+    second: VegetacaoRasteira1_122
+  - first:
+      213: -8312471495640330223
+    second: VegetacaoRasteira1_123
+  - first:
+      213: -6929889701658813835
+    second: VegetacaoRasteira1_124
+  - first:
+      213: 2414066680081125787
+    second: VegetacaoRasteira1_125
+  - first:
+      213: -2011316122422344535
+    second: VegetacaoRasteira1_126
+  - first:
+      213: -3106055328480450362
+    second: VegetacaoRasteira1_127
+  - first:
+      213: 4225233298947643602
+    second: VegetacaoRasteira1_128
+  - first:
+      213: -6955872623521187082
+    second: VegetacaoRasteira1_129
+  - first:
+      213: -4354937647495054444
+    second: VegetacaoRasteira1_130
+  - first:
+      213: -900649046355379486
+    second: VegetacaoRasteira1_131
+  - first:
+      213: 7217740699397418536
+    second: VegetacaoRasteira1_132
+  - first:
+      213: 2726233759589959705
+    second: VegetacaoRasteira1_133
+  - first:
+      213: -1276520713866877429
+    second: VegetacaoRasteira1_134
+  - first:
+      213: 4526565200550934352
+    second: VegetacaoRasteira1_135
+  - first:
+      213: -1645964462406457689
+    second: VegetacaoRasteira1_136
+  - first:
+      213: -8022731541999369446
+    second: VegetacaoRasteira1_137
+  - first:
+      213: 371843436359562653
+    second: VegetacaoRasteira1_138
+  - first:
+      213: -8329269117823128641
+    second: VegetacaoRasteira1_139
+  - first:
+      213: 5102394797024721722
+    second: VegetacaoRasteira1_140
+  - first:
+      213: -7495240577480275361
+    second: VegetacaoRasteira1_141
+  - first:
+      213: 4050484781858835987
+    second: VegetacaoRasteira1_142
+  - first:
+      213: 7122138603047069834
+    second: VegetacaoRasteira1_143
+  - first:
+      213: 1541529751304778913
+    second: VegetacaoRasteira1_144
+  - first:
+      213: -7724849363825686451
+    second: VegetacaoRasteira1_145
+  - first:
+      213: 2049917475599225492
+    second: VegetacaoRasteira1_146
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_0
+      rect:
+        serializedVersion: 2
+        x: 8779
+        y: 795
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e91979cbe0090ed0800000000000000
+      internalID: -2447423909801682457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_1
+      rect:
+        serializedVersion: 2
+        x: 3189
+        y: 0
+        width: 608
+        height: 764
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd2828acf5e235ba0800000000000000
+      internalID: -6101482081202568483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_2
+      rect:
+        serializedVersion: 2
+        x: 3414
+        y: 756
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fe20b5774377a780800000000000000
+      internalID: -8671835806724247818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_3
+      rect:
+        serializedVersion: 2
+        x: 8068
+        y: 0
+        width: 835
+        height: 794
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62092a93123601a50800000000000000
+      internalID: 6489796057392910374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_4
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 668
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ba99cd7c5c833ab0800000000000000
+      internalID: -5029522029967467848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_5
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 669
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d008a803cf44bff0800000000000000
+      internalID: -21304399147564841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_6
+      rect:
+        serializedVersion: 2
+        x: 5543
+        y: 0
+        width: 1292
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1cd056b51dbc1130800000000000000
+      internalID: 3538911308157082653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_7
+      rect:
+        serializedVersion: 2
+        x: 6275
+        y: 688
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6437a70d5f4c9f6b0800000000000000
+      internalID: -5261958129561996474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_8
+      rect:
+        serializedVersion: 2
+        x: 6299
+        y: 676
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 773c5ea45bb4f5a40800000000000000
+      internalID: 5359085323611915127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 592
+        height: 676
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db81c235afa1b62d0800000000000000
+      internalID: -3284501840797099843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_10
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 650
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc6e5a8e50f0ed80800000000000000
+      internalID: -8223308630739489537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_11
+      rect:
+        serializedVersion: 2
+        x: 7275
+        y: 632
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f88f7dcb973f66780800000000000000
+      internalID: -8689990726779930481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_12
+      rect:
+        serializedVersion: 2
+        x: 7325
+        y: 646
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0092a64d79c8d0490800000000000000
+      internalID: -7778406397667301120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_13
+      rect:
+        serializedVersion: 2
+        x: 7167
+        y: 0
+        width: 72
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a103708958bbbda10800000000000000
+      internalID: 1935346647341412378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_14
+      rect:
+        serializedVersion: 2
+        x: 7218
+        y: 610
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3d5cee93625757f0800000000000000
+      internalID: -623939435545993926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_15
+      rect:
+        serializedVersion: 2
+        x: 7219
+        y: 0
+        width: 165
+        height: 646
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82a5a7385d73c10c0800000000000000
+      internalID: -4603743328906094040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_16
+      rect:
+        serializedVersion: 2
+        x: 8064
+        y: 605
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eecf2148d01f55250800000000000000
+      internalID: 5932913124483202286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_17
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 0
+        width: 172
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97ab60cc6c8d68b70800000000000000
+      internalID: 8901040061882481273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_18
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 567
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 899ce73493f176560800000000000000
+      internalID: 7306843251237898648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_19
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 582
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 252d9fc0286daf9f0800000000000000
+      internalID: -433798560036040110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_20
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 580
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf1176397124026f0800000000000000
+      internalID: -711496072099851780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_21
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 0
+        width: 72
+        height: 599
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d22122f1e3cf8b780800000000000000
+      internalID: -8666900139134021075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_22
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 580
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae843ebc484205100800000000000000
+      internalID: 94615744949733610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_23
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 580
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d824f70b2d13e3a50800000000000000
+      internalID: 6502689692943598221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_24
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 578
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15a260f4a7e051540800000000000000
+      internalID: 4977900881602554449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_25
+      rect:
+        serializedVersion: 2
+        x: 1593
+        y: 580
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 268b73215990539e0800000000000000
+      internalID: -1642395953246259102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_26
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 581
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6c77903131fa1cd0800000000000000
+      internalID: -2586489842400002962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_27
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 571
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec9a68f4462627190800000000000000
+      internalID: -7966196607894509106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_28
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 0
+        width: 263
+        height: 599
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a191a56479624f330800000000000000
+      internalID: 3743659621413951770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_29
+      rect:
+        serializedVersion: 2
+        x: 2253
+        y: 573
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0aaa5f720309d3c0800000000000000
+      internalID: -4334429857105925620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_30
+      rect:
+        serializedVersion: 2
+        x: 2285
+        y: 580
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 543732da32e306ce0800000000000000
+      internalID: -1414061960044776635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_31
+      rect:
+        serializedVersion: 2
+        x: 2364
+        y: 578
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ab90d1ce2d177f80800000000000000
+      internalID: -8108980517399913565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_32
+      rect:
+        serializedVersion: 2
+        x: 2417
+        y: 578
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25111e30563b1dca0800000000000000
+      internalID: -5993812382615269038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_33
+      rect:
+        serializedVersion: 2
+        x: 2487
+        y: 580
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c082fcd3b5574e130800000000000000
+      internalID: 3595127437287958540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_34
+      rect:
+        serializedVersion: 2
+        x: 2545
+        y: 578
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfd24e7f100f22f20800000000000000
+      internalID: 3396540960235335164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_35
+      rect:
+        serializedVersion: 2
+        x: 2596
+        y: 567
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a80a3bf58a6e77d00800000000000000
+      internalID: 970497855556133002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_36
+      rect:
+        serializedVersion: 2
+        x: 3793
+        y: 572
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1a46a726d71cb570800000000000000
+      internalID: 8483682006614821403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_37
+      rect:
+        serializedVersion: 2
+        x: 6859
+        y: 577
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e9bf387e1e930d30800000000000000
+      internalID: 4396531514947385827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_38
+      rect:
+        serializedVersion: 2
+        x: 7104
+        y: 569
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b38ecbcf4f677c890800000000000000
+      internalID: -7437845464994748357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_39
+      rect:
+        serializedVersion: 2
+        x: 7113
+        y: 0
+        width: 77
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a327f86227352900800000000000000
+      internalID: 658993541409088417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_40
+      rect:
+        serializedVersion: 2
+        x: 7427
+        y: 580
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27615fcf3d5d82d30800000000000000
+      internalID: 4407007341840766578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_41
+      rect:
+        serializedVersion: 2
+        x: 7472
+        y: 566
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0b76607cde633e50800000000000000
+      internalID: 6787890956435094285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_42
+      rect:
+        serializedVersion: 2
+        x: 7930
+        y: 0
+        width: 149
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a26cac65e0a6bfa70800000000000000
+      internalID: 8861793301599798826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_43
+      rect:
+        serializedVersion: 2
+        x: 8898
+        y: 0
+        width: 150
+        height: 591
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b071522c88955130800000000000000
+      internalID: 3554915208517480624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_44
+      rect:
+        serializedVersion: 2
+        x: 8899
+        y: 580
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b5a312cb48117c50800000000000000
+      internalID: 6661132037515355572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_45
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 0
+        width: 62
+        height: 558
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b88231922a2164e50800000000000000
+      internalID: 6793137575618095243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_46
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 558
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec1bc4ace39247690800000000000000
+      internalID: -7605408521063190066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_47
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 0
+        width: 121
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a8aec10eaf6193c0800000000000000
+      internalID: -4354576571545245532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_48
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 0
+        width: 158
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb267260d1102cea0800000000000000
+      internalID: -5854115341459299650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_49
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 0
+        width: 301
+        height: 572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09229c4b44bb922c0800000000000000
+      internalID: -4455824452541144432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_50
+      rect:
+        serializedVersion: 2
+        x: 2381
+        y: 0
+        width: 76
+        height: 578
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed7c368f2cf88e130800000000000000
+      internalID: 3596282370009057246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_51
+      rect:
+        serializedVersion: 2
+        x: 2439
+        y: 0
+        width: 161
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e14b26976b012bd0800000000000000
+      internalID: -2656829765642927644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_52
+      rect:
+        serializedVersion: 2
+        x: 2642
+        y: 550
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae3871e71f1403410800000000000000
+      internalID: 1454735185099064298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_53
+      rect:
+        serializedVersion: 2
+        x: 2735
+        y: 537
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d564a4cd007fb20800000000000000
+      internalID: 3168001809017363835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_54
+      rect:
+        serializedVersion: 2
+        x: 2853
+        y: 0
+        width: 146
+        height: 558
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29b561ab8267db0b0800000000000000
+      internalID: -5711278835143124078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_55
+      rect:
+        serializedVersion: 2
+        x: 2986
+        y: 536
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d4fc1e86634a8a0800000000000000
+      internalID: -6294846555064152796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_56
+      rect:
+        serializedVersion: 2
+        x: 2999
+        y: 0
+        width: 199
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06bd02915a6976110800000000000000
+      internalID: 1254136657081326432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_57
+      rect:
+        serializedVersion: 2
+        x: 3063
+        y: 553
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 408e5bd92bcf20c20800000000000000
+      internalID: 3171374931702573060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_58
+      rect:
+        serializedVersion: 2
+        x: 3113
+        y: 552
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d84637d4e5057d190800000000000000
+      internalID: -7937787452260653939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_59
+      rect:
+        serializedVersion: 2
+        x: 5306
+        y: 0
+        width: 51
+        height: 578
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6dbc8dbf33e2d9c0800000000000000
+      internalID: -3903808064074236566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_60
+      rect:
+        serializedVersion: 2
+        x: 5418
+        y: 555
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5835392490f5adf50800000000000000
+      internalID: 6906937471902372741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_61
+      rect:
+        serializedVersion: 2
+        x: 6815
+        y: 0
+        width: 73
+        height: 577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed39aac99fc2f3140800000000000000
+      internalID: 4701525986584990686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_62
+      rect:
+        serializedVersion: 2
+        x: 6862
+        y: 0
+        width: 74
+        height: 558
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40ba9a119a903e040800000000000000
+      internalID: 4675591459891161860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_63
+      rect:
+        serializedVersion: 2
+        x: 6917
+        y: 558
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b7c6621d7eaa7f40800000000000000
+      internalID: 5727081728357877688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_64
+      rect:
+        serializedVersion: 2
+        x: 6927
+        y: 0
+        width: 59
+        height: 558
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d01b583874476d60800000000000000
+      internalID: 7883344955867599065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_65
+      rect:
+        serializedVersion: 2
+        x: 6965
+        y: 558
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18bcd56d1a19522c0800000000000000
+      internalID: -4456996131941004415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_66
+      rect:
+        serializedVersion: 2
+        x: 6965
+        y: 0
+        width: 174
+        height: 568
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99c0dd0dc0a38a050800000000000000
+      internalID: 5811959145839791257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_67
+      rect:
+        serializedVersion: 2
+        x: 7039
+        y: 554
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 491e9d1b6bec62730800000000000000
+      internalID: 3974091005264257428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_68
+      rect:
+        serializedVersion: 2
+        x: 7071
+        y: 558
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be1dce85a899284c0800000000000000
+      internalID: -4286695075826839061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_69
+      rect:
+        serializedVersion: 2
+        x: 7365
+        y: 0
+        width: 118
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbc046c1def68a850800000000000000
+      internalID: 6388479135599299771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_70
+      rect:
+        serializedVersion: 2
+        x: 7477
+        y: 0
+        width: 54
+        height: 567
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4f6197944c2472d0800000000000000
+      internalID: -3281949555333959857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_71
+      rect:
+        serializedVersion: 2
+        x: 9046
+        y: 0
+        width: 567
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d63b66bc86ec530800000000000000
+      internalID: 3877151552023260551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_72
+      rect:
+        serializedVersion: 2
+        x: 9157
+        y: 556
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5fda78388a8d6910800000000000000
+      internalID: 1832272941077421914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_73
+      rect:
+        serializedVersion: 2
+        x: 9165
+        y: 556
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44f1cda2207fe83e0800000000000000
+      internalID: -2049429191725932732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_74
+      rect:
+        serializedVersion: 2
+        x: 9243
+        y: 558
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5382e60f31c19b4a0800000000000000
+      internalID: -6577194908834191307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_75
+      rect:
+        serializedVersion: 2
+        x: 9314
+        y: 555
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b78455336fdd228e0800000000000000
+      internalID: -1719568058209187717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_76
+      rect:
+        serializedVersion: 2
+        x: 9482
+        y: 542
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90275b3c710cafe50800000000000000
+      internalID: 6843993792043119113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_77
+      rect:
+        serializedVersion: 2
+        x: 9521
+        y: 553
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c8af63226329aa0800000000000000
+      internalID: -6155798220082869208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_78
+      rect:
+        serializedVersion: 2
+        x: 9570
+        y: 556
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed3915f1a19f2a650800000000000000
+      internalID: 6242825924078834654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_79
+      rect:
+        serializedVersion: 2
+        x: 9626
+        y: 556
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b11c434b0af56250800000000000000
+      internalID: 5937426610038510004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_80
+      rect:
+        serializedVersion: 2
+        x: 9712
+        y: 556
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f8731b3102eb8290800000000000000
+      internalID: -7886961827495315209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_81
+      rect:
+        serializedVersion: 2
+        x: 9768
+        y: 541
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a11fabd3bb886da0800000000000000
+      internalID: -5951353302969020000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_82
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 518
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 441c0fd40ae010d20800000000000000
+      internalID: 3242889288348647748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_83
+      rect:
+        serializedVersion: 2
+        x: 1937
+        y: 0
+        width: 211
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 310d6ed0432a827f0800000000000000
+      internalID: -637081002817695725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_84
+      rect:
+        serializedVersion: 2
+        x: 2598
+        y: 0
+        width: 256
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff56ca7042b603210800000000000000
+      internalID: 1310665294056547839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_85
+      rect:
+        serializedVersion: 2
+        x: 2965
+        y: 530
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c9b3910959cee160800000000000000
+      internalID: 7056799050251876804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_86
+      rect:
+        serializedVersion: 2
+        x: 3787
+        y: 0
+        width: 61
+        height: 553
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f15cd833418c2770800000000000000
+      internalID: 8587380715205448178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_87
+      rect:
+        serializedVersion: 2
+        x: 3898
+        y: 525
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd1d5a326198accc0800000000000000
+      internalID: -3689986216496344613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_88
+      rect:
+        serializedVersion: 2
+        x: 5145
+        y: 0
+        width: 160
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7825065e7c7312f0800000000000000
+      internalID: -1003321409922586497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_89
+      rect:
+        serializedVersion: 2
+        x: 5297
+        y: 536
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2f2b64422ef83e60800000000000000
+      internalID: 7942377365998087979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_90
+      rect:
+        serializedVersion: 2
+        x: 5346
+        y: 0
+        width: 160
+        height: 555
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 376b007a1ddebe1b0800000000000000
+      internalID: -5626141824763513229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_91
+      rect:
+        serializedVersion: 2
+        x: 7585
+        y: 525
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e90f4824bf666fa60800000000000000
+      internalID: 7707461041630015646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_92
+      rect:
+        serializedVersion: 2
+        x: 7879
+        y: 515
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c14f61feee670c20800000000000000
+      internalID: 3172626435037675974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_93
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 0
+        width: 226
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ba3f74df13c7c070800000000000000
+      internalID: 8126678594089859760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_94
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 0
+        width: 312
+        height: 517
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fd1b39ed482fa980800000000000000
+      internalID: -8525551254498501134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_95
+      rect:
+        serializedVersion: 2
+        x: 3822
+        y: 0
+        width: 128
+        height: 524
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c264a0f39607ac20800000000000000
+      internalID: 3217547691246772937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_96
+      rect:
+        serializedVersion: 2
+        x: 4554
+        y: 0
+        width: 147
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae0d0dea846c7ceb0800000000000000
+      internalID: -4699569670664957718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_97
+      rect:
+        serializedVersion: 2
+        x: 5531
+        y: 514
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8fb41421720d1620800000000000000
+      internalID: 2746354032725770126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_98
+      rect:
+        serializedVersion: 2
+        x: 7531
+        y: 0
+        width: 58
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18b7aabe730d4e770800000000000000
+      internalID: 8639258923799051137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_99
+      rect:
+        serializedVersion: 2
+        x: 7645
+        y: 503
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 504265967acbfae20800000000000000
+      internalID: 3364114873881863173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_100
+      rect:
+        serializedVersion: 2
+        x: 7720
+        y: 492
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96d2c5471e5a8d2f0800000000000000
+      internalID: -947825333823066775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_101
+      rect:
+        serializedVersion: 2
+        x: 7778
+        y: 496
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aba194ff57e4f140800000000000000
+      internalID: 4752677906093812649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_102
+      rect:
+        serializedVersion: 2
+        x: 7821
+        y: 0
+        width: 62
+        height: 515
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 881161f38e01ab000800000000000000
+      internalID: 52372935345049992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_103
+      rect:
+        serializedVersion: 2
+        x: 7823
+        y: 511
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b9ec8ebb41d0df90800000000000000
+      internalID: -6930809703273535052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_104
+      rect:
+        serializedVersion: 2
+        x: 7926
+        y: 514
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7282f48c867036a80800000000000000
+      internalID: -8474921927162517465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_105
+      rect:
+        serializedVersion: 2
+        x: 3965
+        y: 489
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a0c8f98fdb091f10800000000000000
+      internalID: 2240835344313925796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_106
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 0
+        width: 151
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd19ea49ef3a8e6e0800000000000000
+      internalID: -1808014936577764897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_107
+      rect:
+        serializedVersion: 2
+        x: 4029
+        y: 492
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fa1facf1d4840bd0800000000000000
+      internalID: -2664859042074125578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_108
+      rect:
+        serializedVersion: 2
+        x: 4113
+        y: 487
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe7f034903c73f210800000000000000
+      internalID: 1365571660109903855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_109
+      rect:
+        serializedVersion: 2
+        x: 4195
+        y: 487
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 259a9d006b1c3aef0800000000000000
+      internalID: -98021779429545646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_110
+      rect:
+        serializedVersion: 2
+        x: 4342
+        y: 471
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 324d39d8e71674450800000000000000
+      internalID: 6072929818701452323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_111
+      rect:
+        serializedVersion: 2
+        x: 4665
+        y: 489
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda3bcf4e9286c180800000000000000
+      internalID: -9095438780972975394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_112
+      rect:
+        serializedVersion: 2
+        x: 4752
+        y: 471
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce590a5ffbe050810800000000000000
+      internalID: 1730805849416308204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_113
+      rect:
+        serializedVersion: 2
+        x: 4880
+        y: 473
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08716fb91540364e0800000000000000
+      internalID: -1989741861812168832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_114
+      rect:
+        serializedVersion: 2
+        x: 4902
+        y: 0
+        width: 198
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97994375a6cc1bfa0800000000000000
+      internalID: -5786619289092712071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_115
+      rect:
+        serializedVersion: 2
+        x: 5095
+        y: 471
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c2868aee274a0a20800000000000000
+      internalID: 3029311966188831425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_116
+      rect:
+        serializedVersion: 2
+        x: 5504
+        y: 0
+        width: 56
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0d5c14141cb5e0c0800000000000000
+      internalID: -4547021454337876726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_117
+      rect:
+        serializedVersion: 2
+        x: 7577
+        y: 0
+        width: 256
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26e324c23e3f69e70800000000000000
+      internalID: 9121746252311182946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_118
+      rect:
+        serializedVersion: 2
+        x: 7879
+        y: 0
+        width: 55
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 019b5e6bf4318a3c0800000000000000
+      internalID: -4348204207134361328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_119
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 0
+        width: 44
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5a5e0a10f2764350800000000000000
+      internalID: 6000609929072630364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_120
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 467
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f0b982da685e3c0800000000000000
+      internalID: -4330907388378148962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_121
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 469
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39cc1b6d73c46bf60800000000000000
+      internalID: 8049705186680229011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_122
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 468
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75e99f38db45b6770800000000000000
+      internalID: 8605064685961190999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_123
+      rect:
+        serializedVersion: 2
+        x: 3930
+        y: 0
+        width: 69
+        height: 488
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1105cc0573b24ac80800000000000000
+      internalID: -8312471495640330223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_124
+      rect:
+        serializedVersion: 2
+        x: 4146
+        y: 0
+        width: 251
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57a1dff480614df90800000000000000
+      internalID: -6929889701658813835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_125
+      rect:
+        serializedVersion: 2
+        x: 4286
+        y: 471
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b919752fadc708120800000000000000
+      internalID: 2414066680081125787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_126
+      rect:
+        serializedVersion: 2
+        x: 4377
+        y: 468
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a40000a4ae5614e0800000000000000
+      internalID: -2011316122422344535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_127
+      rect:
+        serializedVersion: 2
+        x: 4433
+        y: 470
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c8a635a22315e4d0800000000000000
+      internalID: -3106055328480450362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_128
+      rect:
+        serializedVersion: 2
+        x: 4442
+        y: 0
+        width: 113
+        height: 490
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d81de49c4b03aa30800000000000000
+      internalID: 4225233298947643602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_129
+      rect:
+        serializedVersion: 2
+        x: 4497
+        y: 470
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fab724e3b6c77f90800000000000000
+      internalID: -6955872623521187082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_130
+      rect:
+        serializedVersion: 2
+        x: 4695
+        y: 0
+        width: 61
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49bf41678472093c0800000000000000
+      internalID: -4354937647495054444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_131
+      rect:
+        serializedVersion: 2
+        x: 4755
+        y: 0
+        width: 150
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ea71b4d6704083f0800000000000000
+      internalID: -900649046355379486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_132
+      rect:
+        serializedVersion: 2
+        x: 4967
+        y: 466
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82e6674cce09a2460800000000000000
+      internalID: 7217740699397418536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_133
+      rect:
+        serializedVersion: 2
+        x: 5015
+        y: 467
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 918890ff82785d520800000000000000
+      internalID: 2726233759589959705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_134
+      rect:
+        serializedVersion: 2
+        x: 5124
+        y: 468
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b06698d8c23e84ee0800000000000000
+      internalID: -1276520713866877429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_135
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 0
+        width: 150
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 057bb7f211791de30800000000000000
+      internalID: 4526565200550934352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_136
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 0
+        width: 47
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a6a859ca0c5829e0800000000000000
+      internalID: -1645964462406457689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_137
+      rect:
+        serializedVersion: 2
+        x: 4393
+        y: 0
+        width: 55
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a134ec63b2889a090800000000000000
+      internalID: -8022731541999369446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_138
+      rect:
+        serializedVersion: 2
+        x: 5099
+        y: 0
+        width: 52
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d95b540a2ad092500800000000000000
+      internalID: 371843436359562653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_139
+      rect:
+        serializedVersion: 2
+        x: 5304
+        y: 424
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbb65812edd786c80800000000000000
+      internalID: -8329269117823128641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_140
+      rect:
+        serializedVersion: 2
+        x: 9044
+        y: 415
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3bb574c8095fc640800000000000000
+      internalID: 5102394797024721722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_141
+      rect:
+        serializedVersion: 2
+        x: 2851
+        y: 399
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5ac131086e8bf790800000000000000
+      internalID: -7495240577480275361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_142
+      rect:
+        serializedVersion: 2
+        x: 4552
+        y: 350
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31e42ded276363830800000000000000
+      internalID: 4050484781858835987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_143
+      rect:
+        serializedVersion: 2
+        x: 5097
+        y: 305
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a88a7b3235be6d260800000000000000
+      internalID: 7122138603047069834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_144
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 0
+        width: 8
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a4b735342d946510800000000000000
+      internalID: 1541529751304778913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_145
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 0
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4884cd7e62dbc490800000000000000
+      internalID: -7724849363825686451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VegetacaoRasteira1_146
+      rect:
+        serializedVersion: 2
+        x: 4749
+        y: 0
+        width: 9
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49215f74515c27c10800000000000000
+      internalID: 2049917475599225492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
