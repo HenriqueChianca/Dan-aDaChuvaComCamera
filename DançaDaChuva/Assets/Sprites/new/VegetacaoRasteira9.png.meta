@@ -128,12 +128,12 @@ TextureImporter:
       name: VegetacaoRasteira9_0
       rect:
         serializedVersion: 2
-        x: 3702
-        y: 1307
-        width: 30
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 9826
+        height: 1316
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0022290645}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -155,7 +155,7 @@ TextureImporter:
         width: 52
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -177,7 +177,7 @@ TextureImporter:
         width: 310
         height: 404
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -199,7 +199,7 @@ TextureImporter:
         width: 107
         height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -221,7 +221,7 @@ TextureImporter:
         width: 9826
         height: 808
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -238,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5705b44d2b1a38c42b87d8bb6d6c314c
     internalID: 0
     vertices: []
     indices: 
@@ -247,7 +247,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      VegetacaoRasteira9_0: 7963588026663482205
+      VegetacaoRasteira9_1: 2575557436439984233
+      VegetacaoRasteira9_2: -1098148924117209478
+      VegetacaoRasteira9_3: -6316849084997594657
+      VegetacaoRasteira9_4: -7878044510046735973
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

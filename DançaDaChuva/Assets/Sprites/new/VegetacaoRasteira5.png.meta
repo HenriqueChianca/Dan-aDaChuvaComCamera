@@ -117,11 +117,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 106
         width: 9826
-        height: 1301
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 1195
+      alignment: 9
+      pivot: {x: 0.49861118, y: 0.111877725}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7b9803d677e9a264ba466263c7d92d87
     internalID: 0
     vertices: []
     indices: 
@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      VegetacaoRasteira5_0: -2983926229847042448
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

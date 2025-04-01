@@ -120,8 +120,8 @@ TextureImporter:
         y: 646
         width: 1300
         height: 1094
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.48950234, y: 0.23803298}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 006d95e019b48cb4cb1082633b3d0b1e
     internalID: 0
     vertices: []
     indices: 
@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FolhasToonCheias4_0: 2879646820434048981
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

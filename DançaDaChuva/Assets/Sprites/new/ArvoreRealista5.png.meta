@@ -120,8 +120,8 @@ TextureImporter:
         y: 579
         width: 1682
         height: 1164
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.532455, y: 0.21861388}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 83c47eb19250c1d4bb6d2ae07a62c18c
     internalID: 0
     vertices: []
     indices: 
@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ArvoreRealista5_0: 345486206330791110
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
