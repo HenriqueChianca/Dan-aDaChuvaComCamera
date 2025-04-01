@@ -1,31 +1,56 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class CameraMovement : MonoBehaviour
 {
-    public ParticleSystem particleSystem;
-    public RawImage displayImage; // Exibe a imagem da câmera na interface
-    private WebCamTexture webCamTexture;
-    private Color32[] previousFrame;
-    private bool isActive = false;
-    private float inactivityTimer = 0f;
 
-    [Tooltip("Tempo (em segundos) antes de desativar as partículas em caso de inatividade")]
+    [System.Serializable]
+    public class ParticleSystemData
+    {
+        [Tooltip("Particle System a ser controlado.")]
+        public ParticleSystem ps;
+
+        [Tooltip("Delay individual de ativação (em segundos) para este Particle System.")]
+        public float activationDelay;
+
+        [HideInInspector]
+        public bool isActive = false;
+
+        [HideInInspector]
+        public Coroutine activationCoroutine = null;
+    }
+
+
+    [Tooltip("Lista de Particle Systems (com delay individual) a serem controlados pelo movimento detectado pela câmera.")]
+    public List<ParticleSystemData> particleSystemsData;
+
+    [Tooltip("RawImage para exibir a imagem da câmera na interface.")]
+    public RawImage displayImage;
+
+    [Tooltip("Tempo em segundos para desativar as partículas após inatividade.")]
     public float inactivityThreshold = 3f;
 
-    [Tooltip("Quantidade mínima de pixels alterados para ativar as partículas")]
+    [Tooltip("Quantidade mínima de pixels alterados para ativar os Particle Systems.")]
     public int movementThreshold = 1000;
+
+    private WebCamTexture webCamTexture;
+    private Color32[] previousFrame;
+    private float inactivityTimer = 0f;
 
     void Start()
     {
         StartCoroutine(InitializeCamera());
-        if (particleSystem != null)
+
+        foreach (ParticleSystemData data in particleSystemsData)
         {
-            // Garante que as partículas estejam desativadas no início
-            var emission = particleSystem.emission;
-            emission.enabled = false;
-            particleSystem.Stop();
+            if (data.ps != null)
+            {
+                data.ps.Stop();
+                var emission = data.ps.emission;
+                emission.enabled = false;
+            }
         }
     }
 
@@ -33,12 +58,10 @@ public class CameraMovement : MonoBehaviour
     {
         if (WebCamTexture.devices.Length > 0)
         {
-            // Seleciona a primeira câmera disponível
             webCamTexture = new WebCamTexture(WebCamTexture.devices[0].name);
             webCamTexture.Play();
             yield return new WaitUntil(() => webCamTexture.width > 100);
-
-            Debug.Log("✅ Câmera inicializada!");
+            Debug.Log("Câmera inicializada!");
             previousFrame = new Color32[webCamTexture.width * webCamTexture.height];
 
             if (displayImage != null)
@@ -49,7 +72,7 @@ public class CameraMovement : MonoBehaviour
         }
         else
         {
-            Debug.LogError("🚨 Nenhuma câmera detectada!");
+            Debug.LogError("Nenhuma câmera detectada!");
         }
     }
 
@@ -60,19 +83,30 @@ public class CameraMovement : MonoBehaviour
 
         DetectCameraMovement();
 
-        if (isActive)
+        bool anyActive = false;
+        foreach (ParticleSystemData data in particleSystemsData)
+        {
+            if (data.isActive)
+            {
+                anyActive = true;
+                break;
+            }
+        }
+
+        if (anyActive)
         {
             inactivityTimer += Time.deltaTime;
             if (inactivityTimer >= inactivityThreshold)
             {
-                DeactivateParticles();
+                DeactivateAll();
             }
         }
     }
 
     void DetectCameraMovement()
     {
-        if (!webCamTexture.didUpdateThisFrame) return;
+        if (!webCamTexture.didUpdateThisFrame)
+            return;
 
         Color32[] currentFrame = webCamTexture.GetPixels32();
         int diffCount = 0;
@@ -91,41 +125,53 @@ public class CameraMovement : MonoBehaviour
         }
 
         previousFrame = (Color32[])currentFrame.Clone();
-
-        Debug.Log("📸 Pixels alterados: " + diffCount);
+        Debug.Log("Pixels alterados: " + diffCount);
 
         if (diffCount > movementThreshold)
         {
-            ActivateParticles();
+            foreach (ParticleSystemData data in particleSystemsData)
+            {
+                if (data.ps != null && !data.isActive && data.activationCoroutine == null)
+                {
+                    data.activationCoroutine = StartCoroutine(ActivateAfterDelay(data));
+                }
+            }
         }
     }
 
-    void ActivateParticles()
+    IEnumerator ActivateAfterDelay(ParticleSystemData data)
     {
-        if (!isActive)
+        yield return new WaitForSeconds(data.activationDelay);
+        if (!data.isActive)
         {
-            isActive = true;
-            inactivityTimer = 0f;
-            if (particleSystem != null)
+            data.isActive = true;
+            if (data.ps != null)
             {
-                var emission = particleSystem.emission;
+                var emission = data.ps.emission;
                 emission.enabled = true;
-                particleSystem.Play();
+                data.ps.Play();
             }
         }
+        data.activationCoroutine = null;
     }
 
-    void DeactivateParticles()
+    void DeactivateAll()
     {
-        if (isActive)
+        foreach (ParticleSystemData data in particleSystemsData)
         {
-            isActive = false;
-            if (particleSystem != null)
+            if (data.ps != null)
             {
-                var emission = particleSystem.emission;
+                var emission = data.ps.emission;
                 emission.enabled = false;
-                particleSystem.Stop();
+                data.ps.Stop();
+                data.isActive = false;
+                if (data.activationCoroutine != null)
+                {
+                    StopCoroutine(data.activationCoroutine);
+                    data.activationCoroutine = null;
+                }
             }
         }
+        inactivityTimer = 0f;
     }
 }
