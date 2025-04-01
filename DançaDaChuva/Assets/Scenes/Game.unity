@@ -309,7 +309,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 0.25882354, g: 0.7254902, b: 0.27450982, a: 1}
       newScaleY: 1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 64678742}
     colorPhases:
     - collisionThreshold: 1
@@ -321,7 +320,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 0.38679248, g: 0.26687735, b: 0.19522074, a: 1}
       newScaleY: 1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 696625675}
     colorPhases:
     - collisionThreshold: 1
@@ -333,7 +331,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 1}
       newScaleY: 0.1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 570689111}
     colorPhases:
     - collisionThreshold: 1
@@ -345,7 +342,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 0.30980393, g: 0.6039216, b: 0.3254902, a: 1}
       newScaleY: 0.1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 2109389237}
     colorPhases:
     - collisionThreshold: 1
@@ -357,7 +353,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 0.38679248, g: 0.26687735, b: 0.19522074, a: 1}
       newScaleY: 1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 696625675}
     colorPhases:
     - collisionThreshold: 1
@@ -369,7 +364,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 1}
       newScaleY: 0.1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 1912470346}
     colorPhases:
     - collisionThreshold: 1
@@ -381,7 +375,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 0.30980393, g: 0.6039216, b: 0.3254902, a: 1}
       newScaleY: 1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 638015262}
     colorPhases:
     - collisionThreshold: 1
@@ -393,7 +386,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 0.38679248, g: 0.26687735, b: 0.19522074, a: 1}
       newScaleY: 1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 1647898688}
     colorPhases:
     - collisionThreshold: 1
@@ -405,7 +397,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 1}
       newScaleY: 0.1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 1912470346}
     colorPhases:
     - collisionThreshold: 1
@@ -417,7 +408,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 0.30980393, g: 0.6039216, b: 0.3254902, a: 1}
       newScaleY: 1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 2060193977}
     colorPhases:
     - collisionThreshold: 1
@@ -429,7 +419,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 0.24152073, g: 0.5372549, b: 0, a: 1}
       newScaleY: 1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 1841458070}
     colorPhases:
     - collisionThreshold: 1
@@ -441,7 +430,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 0.24152073, g: 0.5372549, b: 0, a: 1}
       newScaleY: 1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 1388393718}
     colorPhases:
     - collisionThreshold: 1
@@ -453,7 +441,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 0.24152073, g: 0.5372549, b: 0, a: 1}
       newScaleY: 1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 774788916}
     colorPhases:
     - collisionThreshold: 1
@@ -465,7 +452,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 0.24152073, g: 0.5372549, b: 0, a: 1}
       newScaleY: 1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 644231147}
     colorPhases:
     - collisionThreshold: 1
@@ -477,7 +463,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 0.38679248, g: 0.26687735, b: 0.19522074, a: 1}
       newScaleY: 1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 1744397581}
     colorPhases:
     - collisionThreshold: 1
@@ -489,7 +474,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 1}
       newScaleY: 0.1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 1098920094}
     colorPhases:
     - collisionThreshold: 1
@@ -501,7 +485,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 0.30980393, g: 0.6039216, b: 0.3254902, a: 1}
       newScaleY: 0.1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 1744397581}
     colorPhases:
     - collisionThreshold: 1
@@ -513,7 +496,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 1}
       newScaleY: 0.1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 1744397581}
     colorPhases:
     - collisionThreshold: 1
@@ -525,7 +507,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 1}
       newScaleY: 0.1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 1744397581}
     colorPhases:
     - collisionThreshold: 1
@@ -537,7 +518,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 1}
       newScaleY: 0.1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 1098920094}
     colorPhases:
     - collisionThreshold: 1
@@ -549,7 +529,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 0.30980393, g: 0.6039216, b: 0.3254902, a: 1}
       newScaleY: 0.1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 1629675101}
     colorPhases:
     - collisionThreshold: 1
@@ -561,7 +540,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 1}
       newScaleY: 0.1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 213283138}
     colorPhases:
     - collisionThreshold: 1
@@ -573,7 +551,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 0.38679248, g: 0.26687735, b: 0.19522074, a: 1}
       newScaleY: 1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 1098920094}
     colorPhases:
     - collisionThreshold: 1
@@ -585,7 +562,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 0.30980393, g: 0.6039216, b: 0.3254902, a: 1}
       newScaleY: 0.1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 976799095}
     colorPhases:
     - collisionThreshold: 1
@@ -597,7 +573,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 0.4339623, g: 0.28961688, b: 0.21493414, a: 1}
       newScaleY: 1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 1333239917}
     colorPhases:
     - collisionThreshold: 1
@@ -609,7 +584,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 0.30980393, g: 0.6039216, b: 0.3254902, a: 1}
       newScaleY: 0.1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 1107482439}
     colorPhases:
     - collisionThreshold: 1
@@ -621,7 +595,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 0.24152073, g: 0.5372549, b: 0, a: 1}
       newScaleY: 1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 1107482439}
     colorPhases:
     - collisionThreshold: 1
@@ -633,7 +606,6 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 0.24152073, g: 0.5372549, b: 0, a: 1}
       newScaleY: 1
-    childSpriteRenderers: []
   - spriteRenderer: {fileID: 1107482439}
     colorPhases:
     - collisionThreshold: 1
@@ -645,8 +617,11 @@ MonoBehaviour:
     - collisionThreshold: 150
       targetColor: {r: 0.24152073, g: 0.5372549, b: 0, a: 1}
       newScaleY: 1
-    childSpriteRenderers: []
   particleSystem: {fileID: 1268763142}
+  idleThreshold: 2
+  regressionDelay: 5
+  loseDelay: 5
+  winDelay: 5
 --- !u!1 &213283137
 GameObject:
   m_ObjectHideFlags: 0
@@ -6355,7 +6330,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &826477178
 Transform:
   m_ObjectHideFlags: 0
