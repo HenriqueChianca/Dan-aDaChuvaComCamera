@@ -304,30 +304,32 @@ MonoBehaviour:
     - collisionThreshold: 1
       targetColor: {r: 1, g: 0, b: 0, a: 1}
       newScaleY: 1
+      childTargetColor: {r: 1, g: 1, b: 1, a: 1}
     - collisionThreshold: 50
       targetColor: {r: 1, g: 0.83413935, b: 0, a: 1}
       newScaleY: 1
+      childTargetColor: {r: 1, g: 1, b: 1, a: 1}
     - collisionThreshold: 150
       targetColor: {r: 0.34229445, g: 1, b: 0, a: 1}
       newScaleY: 1
+      childTargetColor: {r: 1, g: 1, b: 1, a: 1}
     childSpriteRenderer: {fileID: 0}
   - spriteRenderer: {fileID: 64678742}
     colorPhases:
     - collisionThreshold: 1
       targetColor: {r: 1, g: 0, b: 0, a: 1}
       newScaleY: 1
+      childTargetColor: {r: 1, g: 1, b: 1, a: 0}
     - collisionThreshold: 50
       targetColor: {r: 1, g: 0.83413935, b: 0, a: 1}
       newScaleY: 1
+      childTargetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 1}
     - collisionThreshold: 150
       targetColor: {r: 0.34229445, g: 1, b: 0, a: 1}
       newScaleY: 1
+      childTargetColor: {r: 1, g: 1, b: 1, a: 1}
     childSpriteRenderer: {fileID: 696625675}
   particleSystem: {fileID: 1268763142}
-  idleThreshold: 2
-  regressionDelay: 5
-  loseDelay: 15
-  winDelay: 9
 --- !u!1 &213283137
 GameObject:
   m_ObjectHideFlags: 0
