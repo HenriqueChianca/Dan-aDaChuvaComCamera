@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,168 +8,166 @@ public class SpriteColorController : MonoBehaviour
     [System.Serializable]
     public class ColorPhase
     {
-        public int collisionThreshold; // Número de colisões necessárias para avançar para esta fase
-        public Color targetColor;      // Cor a ser aplicada nesta fase
-        public float newScaleY = 1f;   // Nova escala em Y para esta fase
+        public int collisionThreshold;  // Número de colisões necessárias para avançar para esta fase
+        public Color targetColor;       // Cor a ser aplicada nesta fase
+        public float newScaleY = 1f;    // Nova escala em Y para esta fase
     }
 
     [System.Serializable]
     public class SpriteColorInfo
     {
-        public SpriteRenderer spriteRenderer; // Referência ao SpriteRenderer principal
-        public List<ColorPhase> colorPhases = new List<ColorPhase>(); // Lista de fases para este sprite
-        [Tooltip("MeshRenderer do filho que será ativado quando o sprite avançar de fase e desativado quando voltar ao estado inicial.")]
-        public MeshRenderer childMeshRenderer; // Mesh do objeto filho (inicialmente desativada)
+        public SpriteRenderer spriteRenderer;      // Referência ao SpriteRenderer principal
+        public List<ColorPhase> colorPhases = new List<ColorPhase>(); // Lista de fases
     }
 
     public List<SpriteColorInfo> spriteColorList = new List<SpriteColorInfo>();
 
-    // Dicionários para rastrear colisões e o índice da fase atual para cada sprite
+    [SerializeField] private ParticleSystem particleSystem;
     private Dictionary<SpriteRenderer, int> collisionCounts = new Dictionary<SpriteRenderer, int>();
     private Dictionary<SpriteRenderer, int> currentPhaseIndex = new Dictionary<SpriteRenderer, int>();
-    private Dictionary<SpriteRenderer, Vector3> originalPositions = new Dictionary<SpriteRenderer, Vector3>();
 
-    // Controla se já houve ao menos uma colisão (para não acionar Game Over de imediato)
+    private bool isMouseMoving = false;
+    private float idleTime = 0f;
+    public float idleThreshold = 2f;
+
+    // Timer para regressão (quando não há colisões)
+    private float regressionTimer = 0f;
+    public float regressionDelay = 5f;
+
+    // Timer para a condição de derrota (quando todos estão no estado inicial após colisões)
+    private float loseTimer = 0f;
+    public float loseDelay = 5f;
     private bool hasCollided = false;
 
-    // Timers para vitória e derrota
+    // Timer para a condição de vitória (quando todos atingiram o estado final)
     private float winTimer = 0f;
-    public float winDelay = 5f; // Tempo para acionar a vitória
+    public float winDelay = 5f;
 
-    private float loseTimer = 0f;
-    public float loseDelay = 10f; // Tempo necessário no estado inicial para acionar o Game Over
-
-    // Timer para regressão: se não houver colisões por esse tempo, os sprites retrocedem uma fase
-    private float collisionResetTimer = 0f;
-    public float collisionResetDelay = 5f;
+    private Dictionary<SpriteRenderer, Vector3> originalPositions = new Dictionary<SpriteRenderer, Vector3>();
 
     void Start()
     {
-        // Inicializa cada item da lista, mas ignora os que não estão configurados corretamente
+        // Inicializa cada item da lista, verificando referências
         foreach (var spriteInfo in spriteColorList)
         {
-            if (spriteInfo == null)
+            if (spriteInfo == null || spriteInfo.spriteRenderer == null)
             {
-                Debug.LogWarning("Um item da lista está nulo e será ignorado.");
+                Debug.LogWarning("Um item da lista ou seu SpriteRenderer está nulo e será ignorado.");
                 continue;
             }
-            if (spriteInfo.spriteRenderer == null)
-            {
-                Debug.LogWarning("SpriteRenderer não atribuído em um SpriteColorInfo; item ignorado.");
-                continue;
-            }
-
-            // Adiciona a chave somente se o spriteRenderer não for nulo
             collisionCounts[spriteInfo.spriteRenderer] = 0;
             currentPhaseIndex[spriteInfo.spriteRenderer] = 0;
             originalPositions[spriteInfo.spriteRenderer] = spriteInfo.spriteRenderer.transform.position;
-
             if (spriteInfo.colorPhases != null && spriteInfo.colorPhases.Count > 0)
             {
+                // Inicializa com a cor da primeira fase
                 spriteInfo.spriteRenderer.color = spriteInfo.colorPhases[0].targetColor;
             }
+        }
 
-            if (spriteInfo.childMeshRenderer != null)
-            {
-                spriteInfo.childMeshRenderer.enabled = false;
-            }
+        if (particleSystem == null)
+        {
+            particleSystem = GetComponent<ParticleSystem>();
         }
     }
 
     void Update()
     {
-        collisionResetTimer += Time.deltaTime;
-        if (collisionResetTimer >= collisionResetDelay)
-        {
-            foreach (var spriteInfo in spriteColorList)
-            {
-                // Certifique-se de que o spriteRenderer não é nulo antes de usar os dicionários
-                if (spriteInfo == null || spriteInfo.spriteRenderer == null)
-                    continue;
-
-                if (currentPhaseIndex[spriteInfo.spriteRenderer] > 0)
-                {
-                    currentPhaseIndex[spriteInfo.spriteRenderer]--;
-                    ColorPhase phase = spriteInfo.colorPhases[currentPhaseIndex[spriteInfo.spriteRenderer]];
-                    spriteInfo.spriteRenderer.color = phase.targetColor;
-                    if (spriteInfo.spriteRenderer.material != null)
-                    {
-                        spriteInfo.spriteRenderer.material.color = phase.targetColor;
-                    }
-                    Vector3 newScale = spriteInfo.spriteRenderer.transform.localScale;
-                    newScale.y = phase.newScaleY;
-                    spriteInfo.spriteRenderer.transform.localScale = newScale;
-                    spriteInfo.spriteRenderer.transform.position = originalPositions[spriteInfo.spriteRenderer];
-
-                    collisionCounts[spriteInfo.spriteRenderer] = 0;
-
-                    Debug.Log("Sprite regrediu para a fase: " + currentPhaseIndex[spriteInfo.spriteRenderer]);
-
-                    if (currentPhaseIndex[spriteInfo.spriteRenderer] == 0 && spriteInfo.childMeshRenderer != null)
-                    {
-                        spriteInfo.childMeshRenderer.enabled = false;
-                    }
-                }
-            }
-            collisionResetTimer = 0f;
-        }
-
+        HandleMouseActivity();
+        HandleRegression();
         CheckWinCondition();
-        CheckLoseCondition();
     }
 
-    void CheckWinCondition()
+    private void HandleMouseActivity()
     {
+        // Ativa/desativa a emissão do Particle System com base no movimento do mouse
+        if (Input.GetAxis("Mouse X") != 0 || Input.GetAxis("Mouse Y") != 0)
+        {
+            isMouseMoving = true;
+            idleTime = 0f;
+            if (particleSystem != null && !particleSystem.isEmitting)
+            {
+                var emission = particleSystem.emission;
+                emission.enabled = true;
+            }
+        }
+        else
+        {
+            idleTime += Time.deltaTime;
+            if (idleTime >= idleThreshold && particleSystem != null && particleSystem.isEmitting)
+            {
+                isMouseMoving = false;
+                var emission = particleSystem.emission;
+                emission.enabled = false;
+            }
+        }
+    }
+
+    private void HandleRegression()
+    {
+        // Verifica se TODOS os sprites estão na fase final
         bool allAtFinal = true;
         foreach (var spriteInfo in spriteColorList)
         {
             if (spriteInfo == null || spriteInfo.spriteRenderer == null)
                 continue;
-
-            // Estado final quando o índice é igual ao número de fases
             if (currentPhaseIndex[spriteInfo.spriteRenderer] < spriteInfo.colorPhases.Count)
             {
                 allAtFinal = false;
                 break;
             }
         }
-
-        if (allAtFinal)
+        // Se não estiverem todos no final, permite a regressão
+        if (!allAtFinal)
         {
-            winTimer += Time.deltaTime;
-            if (winTimer >= winDelay)
+            if (!isMouseMoving)
             {
-                Debug.Log("Vitória: Todos os sprites no estado final por " + winDelay + " segundos.");
-                SceneManager.LoadScene("GameOverWin");
+                regressionTimer += Time.deltaTime;
+                if (regressionTimer >= regressionDelay)
+                {
+                    foreach (var spriteInfo in spriteColorList)
+                    {
+                        if (spriteInfo == null || spriteInfo.spriteRenderer == null)
+                            continue;
+                        int currentIndex = currentPhaseIndex[spriteInfo.spriteRenderer];
+                        if (currentIndex > 0)
+                        {
+                            currentPhaseIndex[spriteInfo.spriteRenderer]--;
+                            ColorPhase previousPhase = spriteInfo.colorPhases[currentPhaseIndex[spriteInfo.spriteRenderer]];
+                            spriteInfo.spriteRenderer.color = previousPhase.targetColor;
+                            Transform spriteTransform = spriteInfo.spriteRenderer.transform;
+                            spriteTransform.localScale = new Vector3(spriteTransform.localScale.x, previousPhase.newScaleY, spriteTransform.localScale.z);
+                            spriteTransform.position = originalPositions[spriteInfo.spriteRenderer];
+                            collisionCounts[spriteInfo.spriteRenderer] = 0;
+                        }
+                    }
+                    regressionTimer = 0f;
+                }
             }
         }
         else
         {
-            winTimer = 0f;
+            // Se todos estão no final, reseta o timer de regressão para não interferir no win timer
+            regressionTimer = 0f;
         }
-    }
 
-    void CheckLoseCondition()
-    {
+        // Verifica a condição de derrota: se todos os sprites estiverem no estado inicial (fase 0) após colisões
         bool allAtInitial = true;
         foreach (var spriteInfo in spriteColorList)
         {
             if (spriteInfo == null || spriteInfo.spriteRenderer == null)
                 continue;
-
             if (currentPhaseIndex[spriteInfo.spriteRenderer] != 0)
             {
                 allAtInitial = false;
                 break;
             }
         }
-
         if (allAtInitial && hasCollided)
         {
             loseTimer += Time.deltaTime;
             if (loseTimer >= loseDelay)
             {
-                Debug.Log("Game Over: Todos os sprites no estado inicial por " + loseDelay + " segundos.");
                 SceneManager.LoadScene("GameOverLose");
             }
         }
@@ -178,7 +177,34 @@ public class SpriteColorController : MonoBehaviour
         }
     }
 
-    // Chamado quando partículas colidem com este objeto
+    private void CheckWinCondition()
+    {
+        bool allAtFinalPhase = true;
+        foreach (var spriteInfo in spriteColorList)
+        {
+            if (spriteInfo == null || spriteInfo.spriteRenderer == null)
+                continue;
+            int currentIndex = currentPhaseIndex[spriteInfo.spriteRenderer];
+            if (currentIndex < spriteInfo.colorPhases.Count)
+            {
+                allAtFinalPhase = false;
+                break;
+            }
+        }
+        if (allAtFinalPhase)
+        {
+            winTimer += Time.deltaTime;
+            if (winTimer >= winDelay)
+            {
+                SceneManager.LoadScene("GameOverWin");
+            }
+        }
+        else
+        {
+            winTimer = 0f;
+        }
+    }
+
     void OnParticleCollision(GameObject other)
     {
         hasCollided = true;
@@ -186,42 +212,21 @@ public class SpriteColorController : MonoBehaviour
         {
             if (spriteInfo == null || spriteInfo.spriteRenderer == null)
                 continue;
-
-            // Verifica se a chave existe no dicionário
-            if (!collisionCounts.ContainsKey(spriteInfo.spriteRenderer) || !currentPhaseIndex.ContainsKey(spriteInfo.spriteRenderer))
-                continue;
-
-            collisionCounts[spriteInfo.spriteRenderer]++;
-            int phaseIndex = currentPhaseIndex[spriteInfo.spriteRenderer];
-
-            if (phaseIndex < spriteInfo.colorPhases.Count)
+            if (collisionCounts.ContainsKey(spriteInfo.spriteRenderer))
             {
-                ColorPhase phase = spriteInfo.colorPhases[phaseIndex];
-                if (collisionCounts[spriteInfo.spriteRenderer] >= phase.collisionThreshold)
+                collisionCounts[spriteInfo.spriteRenderer]++;
+                int currentIndex = currentPhaseIndex[spriteInfo.spriteRenderer];
+                if (currentIndex < spriteInfo.colorPhases.Count &&
+                    collisionCounts[spriteInfo.spriteRenderer] >= spriteInfo.colorPhases[currentIndex].collisionThreshold)
                 {
+                    spriteInfo.spriteRenderer.color = spriteInfo.colorPhases[currentIndex].targetColor;
+                    Transform spriteTransform = spriteInfo.spriteRenderer.transform;
+                    Vector3 fixedPosition = originalPositions[spriteInfo.spriteRenderer];
+                    Vector3 currentScale = spriteTransform.localScale;
+                    spriteTransform.localScale = new Vector3(currentScale.x, spriteInfo.colorPhases[currentIndex].newScaleY, currentScale.z);
+                    spriteTransform.position = fixedPosition;
                     currentPhaseIndex[spriteInfo.spriteRenderer]++;
-
-                    if (currentPhaseIndex[spriteInfo.spriteRenderer] < spriteInfo.colorPhases.Count)
-                    {
-                        ColorPhase newPhase = spriteInfo.colorPhases[currentPhaseIndex[spriteInfo.spriteRenderer]];
-                        spriteInfo.spriteRenderer.color = newPhase.targetColor;
-                        if (spriteInfo.spriteRenderer.material != null)
-                        {
-                            spriteInfo.spriteRenderer.material.color = newPhase.targetColor;
-                        }
-                        Vector3 newScale = spriteInfo.spriteRenderer.transform.localScale;
-                        newScale.y = newPhase.newScaleY;
-                        spriteInfo.spriteRenderer.transform.localScale = newScale;
-                        spriteInfo.spriteRenderer.transform.position = originalPositions[spriteInfo.spriteRenderer];
-                    }
-                    Debug.Log("Sprite atualizado para a fase: " + currentPhaseIndex[spriteInfo.spriteRenderer]);
-
                     collisionCounts[spriteInfo.spriteRenderer] = 0;
-
-                    if (currentPhaseIndex[spriteInfo.spriteRenderer] > 0 && spriteInfo.childMeshRenderer != null)
-                    {
-                        spriteInfo.childMeshRenderer.enabled = true;
-                    }
                 }
             }
         }

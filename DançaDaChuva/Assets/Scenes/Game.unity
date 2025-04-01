@@ -146,7 +146,7 @@ Transform:
   m_GameObject: {fileID: 205951905}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.09, y: -49.3, z: 26.182806}
+  m_LocalPosition: {x: 0.09, y: -14.6, z: 26.182806}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -216,16 +216,17 @@ MonoBehaviour:
     - collisionThreshold: 1
       targetColor: {r: 1, g: 0, b: 0, a: 1}
       newScaleY: 1
-    - collisionThreshold: 10
+    - collisionThreshold: 50
       targetColor: {r: 1, g: 0.83413935, b: 0, a: 1}
       newScaleY: 1
-    - collisionThreshold: 20
+    - collisionThreshold: 150
       targetColor: {r: 0.34229445, g: 1, b: 0, a: 1}
       newScaleY: 1
-    childMeshRenderer: {fileID: 0}
-  winDelay: 5
-  loseDelay: 10
-  collisionResetDelay: 5
+  particleSystem: {fileID: 1268763142}
+  idleThreshold: 2
+  regressionDelay: 5
+  loseDelay: 15
+  winDelay: 9
 --- !u!1 &488749029
 GameObject:
   m_ObjectHideFlags: 0
@@ -5172,7 +5173,7 @@ MonoBehaviour:
   - ps: {fileID: 1506546747}
     activationDelay: 1
     isActive: 0
-  inactivityThreshold: 20
+  inactivityThreshold: 200
   movementsNeeded: 3
 --- !u!1 &665073995
 GameObject:
@@ -5652,7 +5653,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268763140}
   serializedVersion: 8
-  lengthInSec: 100000
+  lengthInSec: 10000
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -5727,7 +5728,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 4
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -6481,7 +6482,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 50
       minScalar: 10
       maxCurve:
         serializedVersion: 2
