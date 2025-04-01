@@ -203,9 +203,7 @@ Transform:
   m_LocalPosition: {x: 23.37, y: 12.146246, z: 0.468502}
   m_LocalScale: {x: 0.50046015, y: 0.50046015, z: 0.50046015}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 696625674}
-  - {fileID: 570689110}
+  m_Children: []
   m_Father: {fileID: 420045383}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &205951905
@@ -303,50 +301,352 @@ MonoBehaviour:
   - spriteRenderer: {fileID: 1612254575}
     colorPhases:
     - collisionThreshold: 1
-      targetColor: {r: 1, g: 0, b: 0, a: 1}
-      newScaleY: 1
-      childColors: []
+      targetColor: {r: 1, g: 0.84313726, b: 0.4862745, a: 1}
+      newScaleY: 0.5
     - collisionThreshold: 50
-      targetColor: {r: 1, g: 0.83413935, b: 0, a: 1}
+      targetColor: {r: 1, g: 0.79403716, b: 0.3254717, a: 1}
       newScaleY: 1
-      childColors: []
     - collisionThreshold: 150
-      targetColor: {r: 0.34229445, g: 1, b: 0, a: 1}
+      targetColor: {r: 0.25882354, g: 0.7254902, b: 0.27450982, a: 1}
       newScaleY: 1
-      childColors: []
     childSpriteRenderers: []
   - spriteRenderer: {fileID: 64678742}
     colorPhases:
     - collisionThreshold: 1
-      targetColor: {r: 1, g: 0, b: 0, a: 1}
-      newScaleY: 1
-      childColors:
-      - {r: 0, g: 0, b: 0, a: 0}
-      - {r: 0, g: 0, b: 0, a: 0}
+      targetColor: {r: 1, g: 0.6784314, b: 0.4862745, a: 1}
+      newScaleY: 0.1
     - collisionThreshold: 50
-      targetColor: {r: 1, g: 0.83413935, b: 0, a: 1}
+      targetColor: {r: 0.6981132, g: 0.46931347, b: 0.33259168, a: 1}
       newScaleY: 1
-      childColors:
-      - {r: 1, g: 0.7176471, b: 0.38039216, a: 1}
-      - {r: 0.5432622, g: 0.6039216, b: 0.30980393, a: 1}
     - collisionThreshold: 150
-      targetColor: {r: 0.34229445, g: 1, b: 0, a: 1}
+      targetColor: {r: 0.38679248, g: 0.26687735, b: 0.19522074, a: 1}
       newScaleY: 1
-      childColors:
-      - {r: 0, g: 0, b: 0, a: 0}
-      - {r: 0.30980393, g: 0.6039216, b: 0.3254902, a: 0}
+    childSpriteRenderers: []
+  - spriteRenderer: {fileID: 696625675}
+    colorPhases:
+    - collisionThreshold: 1
+      targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 50
+      targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 1}
+      newScaleY: 0.1
     - collisionThreshold: 150
-      targetColor: {r: 0.34229445, g: 1, b: 0, a: 1}
+      targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 1}
+      newScaleY: 0.1
+    childSpriteRenderers: []
+  - spriteRenderer: {fileID: 570689111}
+    colorPhases:
+    - collisionThreshold: 1
+      targetColor: {r: 0.30980393, g: 0.6039216, b: 0.3254902, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 50
+      targetColor: {r: 0.3009968, g: 0.7169812, b: 0.3231826, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 150
+      targetColor: {r: 0.30980393, g: 0.6039216, b: 0.3254902, a: 1}
+      newScaleY: 0.1
+    childSpriteRenderers: []
+  - spriteRenderer: {fileID: 2109389237}
+    colorPhases:
+    - collisionThreshold: 1
+      targetColor: {r: 1, g: 0.6784314, b: 0.4862745, a: 1}
+      newScaleY: 0.1
+    - collisionThreshold: 50
+      targetColor: {r: 0.6981132, g: 0.46931347, b: 0.33259168, a: 1}
       newScaleY: 1
-      childColors: []
-    childSpriteRenderers:
-    - {fileID: 696625675}
-    - {fileID: 570689111}
+    - collisionThreshold: 150
+      targetColor: {r: 0.38679248, g: 0.26687735, b: 0.19522074, a: 1}
+      newScaleY: 1
+    childSpriteRenderers: []
+  - spriteRenderer: {fileID: 696625675}
+    colorPhases:
+    - collisionThreshold: 1
+      targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 50
+      targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 1}
+      newScaleY: 0.1
+    - collisionThreshold: 150
+      targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 1}
+      newScaleY: 0.1
+    childSpriteRenderers: []
+  - spriteRenderer: {fileID: 1912470346}
+    colorPhases:
+    - collisionThreshold: 1
+      targetColor: {r: 0.30980393, g: 0.6039216, b: 0.3254902, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 50
+      targetColor: {r: 0.30980393, g: 0.6039216, b: 0.3254902, a: 0}
+      newScaleY: 1
+    - collisionThreshold: 150
+      targetColor: {r: 0.30980393, g: 0.6039216, b: 0.3254902, a: 1}
+      newScaleY: 1
+    childSpriteRenderers: []
+  - spriteRenderer: {fileID: 638015262}
+    colorPhases:
+    - collisionThreshold: 1
+      targetColor: {r: 1, g: 0.6784314, b: 0.4862745, a: 1}
+      newScaleY: 0.1
+    - collisionThreshold: 150
+      targetColor: {r: 0.38679248, g: 0.26687735, b: 0.19522074, a: 1}
+      newScaleY: 1
+    - collisionThreshold: 150
+      targetColor: {r: 0.38679248, g: 0.26687735, b: 0.19522074, a: 1}
+      newScaleY: 1
+    childSpriteRenderers: []
+  - spriteRenderer: {fileID: 1647898688}
+    colorPhases:
+    - collisionThreshold: 1
+      targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 51
+      targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 1}
+      newScaleY: 0.1
+    - collisionThreshold: 150
+      targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 1}
+      newScaleY: 0.1
+    childSpriteRenderers: []
+  - spriteRenderer: {fileID: 1912470346}
+    colorPhases:
+    - collisionThreshold: 1
+      targetColor: {r: 0.30980393, g: 0.6039216, b: 0.3254902, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 50
+      targetColor: {r: 0.30980393, g: 0.6039216, b: 0.3254902, a: 0}
+      newScaleY: 1
+    - collisionThreshold: 150
+      targetColor: {r: 0.30980393, g: 0.6039216, b: 0.3254902, a: 1}
+      newScaleY: 1
+    childSpriteRenderers: []
+  - spriteRenderer: {fileID: 2060193977}
+    colorPhases:
+    - collisionThreshold: 1
+      targetColor: {r: 0.5372549, g: 0.4117647, b: 0, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 50
+      targetColor: {r: 0.46785077, g: 0.5372549, b: 0, a: 0}
+      newScaleY: 1
+    - collisionThreshold: 150
+      targetColor: {r: 0.24152073, g: 0.5372549, b: 0, a: 1}
+      newScaleY: 1
+    childSpriteRenderers: []
+  - spriteRenderer: {fileID: 1841458070}
+    colorPhases:
+    - collisionThreshold: 1
+      targetColor: {r: 0.5372549, g: 0.4117647, b: 0, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 50
+      targetColor: {r: 0.46785077, g: 0.5372549, b: 0, a: 0}
+      newScaleY: 1
+    - collisionThreshold: 150
+      targetColor: {r: 0.24152073, g: 0.5372549, b: 0, a: 1}
+      newScaleY: 1
+    childSpriteRenderers: []
+  - spriteRenderer: {fileID: 1388393718}
+    colorPhases:
+    - collisionThreshold: 1
+      targetColor: {r: 0.5372549, g: 0.4117647, b: 0, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 50
+      targetColor: {r: 0.46785077, g: 0.5372549, b: 0, a: 0}
+      newScaleY: 1
+    - collisionThreshold: 150
+      targetColor: {r: 0.24152073, g: 0.5372549, b: 0, a: 1}
+      newScaleY: 1
+    childSpriteRenderers: []
+  - spriteRenderer: {fileID: 774788916}
+    colorPhases:
+    - collisionThreshold: 1
+      targetColor: {r: 0.5372549, g: 0.4117647, b: 0, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 50
+      targetColor: {r: 0.46785077, g: 0.5372549, b: 0, a: 0}
+      newScaleY: 1
+    - collisionThreshold: 150
+      targetColor: {r: 0.24152073, g: 0.5372549, b: 0, a: 1}
+      newScaleY: 1
+    childSpriteRenderers: []
+  - spriteRenderer: {fileID: 644231147}
+    colorPhases:
+    - collisionThreshold: 1
+      targetColor: {r: 1, g: 0.6784314, b: 0.4862745, a: 1}
+      newScaleY: 0.1
+    - collisionThreshold: 50
+      targetColor: {r: 0.6981132, g: 0.46931347, b: 0.33259168, a: 1}
+      newScaleY: 1
+    - collisionThreshold: 150
+      targetColor: {r: 0.38679248, g: 0.26687735, b: 0.19522074, a: 1}
+      newScaleY: 1
+    childSpriteRenderers: []
+  - spriteRenderer: {fileID: 1744397581}
+    colorPhases:
+    - collisionThreshold: 1
+      targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 50
+      targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 1}
+      newScaleY: 0.1
+    - collisionThreshold: 150
+      targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 1}
+      newScaleY: 0.1
+    childSpriteRenderers: []
+  - spriteRenderer: {fileID: 1098920094}
+    colorPhases:
+    - collisionThreshold: 1
+      targetColor: {r: 0.30980393, g: 0.6039216, b: 0.3254902, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 50
+      targetColor: {r: 0.3009968, g: 0.7169812, b: 0.3231826, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 150
+      targetColor: {r: 0.30980393, g: 0.6039216, b: 0.3254902, a: 1}
+      newScaleY: 0.1
+    childSpriteRenderers: []
+  - spriteRenderer: {fileID: 1744397581}
+    colorPhases:
+    - collisionThreshold: 1
+      targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 50
+      targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 1}
+      newScaleY: 0.1
+    - collisionThreshold: 150
+      targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 1}
+      newScaleY: 0.1
+    childSpriteRenderers: []
+  - spriteRenderer: {fileID: 1744397581}
+    colorPhases:
+    - collisionThreshold: 1
+      targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 50
+      targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 1}
+      newScaleY: 0.1
+    - collisionThreshold: 150
+      targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 1}
+      newScaleY: 0.1
+    childSpriteRenderers: []
+  - spriteRenderer: {fileID: 1744397581}
+    colorPhases:
+    - collisionThreshold: 1
+      targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 50
+      targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 1}
+      newScaleY: 0.1
+    - collisionThreshold: 150
+      targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 1}
+      newScaleY: 0.1
+    childSpriteRenderers: []
+  - spriteRenderer: {fileID: 1098920094}
+    colorPhases:
+    - collisionThreshold: 1
+      targetColor: {r: 0.30980393, g: 0.6039216, b: 0.3254902, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 50
+      targetColor: {r: 0.3009968, g: 0.7169812, b: 0.3231826, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 150
+      targetColor: {r: 0.30980393, g: 0.6039216, b: 0.3254902, a: 1}
+      newScaleY: 0.1
+    childSpriteRenderers: []
+  - spriteRenderer: {fileID: 1629675101}
+    colorPhases:
+    - collisionThreshold: 1
+      targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 50
+      targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 1}
+      newScaleY: 0.1
+    - collisionThreshold: 150
+      targetColor: {r: 1, g: 0.7176471, b: 0.38039216, a: 1}
+      newScaleY: 0.1
+    childSpriteRenderers: []
+  - spriteRenderer: {fileID: 213283138}
+    colorPhases:
+    - collisionThreshold: 1
+      targetColor: {r: 1, g: 0.6784314, b: 0.4862745, a: 1}
+      newScaleY: 0.1
+    - collisionThreshold: 50
+      targetColor: {r: 0.6981132, g: 0.46931347, b: 0.33259168, a: 1}
+      newScaleY: 1
+    - collisionThreshold: 150
+      targetColor: {r: 0.38679248, g: 0.26687735, b: 0.19522074, a: 1}
+      newScaleY: 1
+    childSpriteRenderers: []
+  - spriteRenderer: {fileID: 1098920094}
+    colorPhases:
+    - collisionThreshold: 1
+      targetColor: {r: 0.30980393, g: 0.6039216, b: 0.3254902, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 50
+      targetColor: {r: 0.3009968, g: 0.7169812, b: 0.3231826, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 150
+      targetColor: {r: 0.30980393, g: 0.6039216, b: 0.3254902, a: 1}
+      newScaleY: 0.1
+    childSpriteRenderers: []
+  - spriteRenderer: {fileID: 976799095}
+    colorPhases:
+    - collisionThreshold: 1
+      targetColor: {r: 0.5372549, g: 0.4117647, b: 0, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 50
+      targetColor: {r: 0.5188679, g: 0.432028, b: 0.2520915, a: 0}
+      newScaleY: 1
+    - collisionThreshold: 150
+      targetColor: {r: 0.4339623, g: 0.28961688, b: 0.21493414, a: 1}
+      newScaleY: 1
+    childSpriteRenderers: []
+  - spriteRenderer: {fileID: 1333239917}
+    colorPhases:
+    - collisionThreshold: 1
+      targetColor: {r: 0.30980393, g: 0.6039216, b: 0.3254902, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 50
+      targetColor: {r: 0.3009968, g: 0.7169812, b: 0.3231826, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 150
+      targetColor: {r: 0.30980393, g: 0.6039216, b: 0.3254902, a: 1}
+      newScaleY: 0.1
+    childSpriteRenderers: []
+  - spriteRenderer: {fileID: 1107482439}
+    colorPhases:
+    - collisionThreshold: 1
+      targetColor: {r: 0.5372549, g: 0.4117647, b: 0, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 50
+      targetColor: {r: 0.46785077, g: 0.5372549, b: 0, a: 0}
+      newScaleY: 1
+    - collisionThreshold: 150
+      targetColor: {r: 0.24152073, g: 0.5372549, b: 0, a: 1}
+      newScaleY: 1
+    childSpriteRenderers: []
+  - spriteRenderer: {fileID: 1107482439}
+    colorPhases:
+    - collisionThreshold: 1
+      targetColor: {r: 0.5372549, g: 0.4117647, b: 0, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 50
+      targetColor: {r: 0.46785077, g: 0.5372549, b: 0, a: 0}
+      newScaleY: 1
+    - collisionThreshold: 150
+      targetColor: {r: 0.24152073, g: 0.5372549, b: 0, a: 1}
+      newScaleY: 1
+    childSpriteRenderers: []
+  - spriteRenderer: {fileID: 1107482439}
+    colorPhases:
+    - collisionThreshold: 1
+      targetColor: {r: 0.5372549, g: 0.4117647, b: 0, a: 0}
+      newScaleY: 0.1
+    - collisionThreshold: 50
+      targetColor: {r: 0.46785077, g: 0.5372549, b: 0, a: 0}
+      newScaleY: 1
+    - collisionThreshold: 150
+      targetColor: {r: 0.24152073, g: 0.5372549, b: 0, a: 1}
+      newScaleY: 1
+    childSpriteRenderers: []
   particleSystem: {fileID: 1268763142}
-  idleThreshold: 2
-  regressionDelay: 5
-  loseDelay: 5
-  winDelay: 5
 --- !u!1 &213283137
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,9 +731,7 @@ Transform:
   m_LocalPosition: {x: 10.02, y: 10.195, z: 0.468502}
   m_LocalScale: {x: 0.3096541, y: 0.3096541, z: 0.3096541}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1629675100}
-  - {fileID: 1700448955}
+  m_Children: []
   m_Father: {fileID: 420045383}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &420045382
@@ -467,15 +765,26 @@ Transform:
   m_Children:
   - {fileID: 1612254576}
   - {fileID: 64678743}
+  - {fileID: 696625674}
+  - {fileID: 570689110}
   - {fileID: 2109389238}
+  - {fileID: 1587705729}
+  - {fileID: 1912470345}
   - {fileID: 638015263}
+  - {fileID: 1647898687}
+  - {fileID: 1604419965}
   - {fileID: 2060193978}
   - {fileID: 1841458071}
   - {fileID: 1388393719}
   - {fileID: 774788917}
   - {fileID: 644231148}
+  - {fileID: 1744397580}
+  - {fileID: 1098920093}
+  - {fileID: 1629675100}
   - {fileID: 213283139}
+  - {fileID: 1700448955}
   - {fileID: 976799096}
+  - {fileID: 1333239916}
   - {fileID: 1107482438}
   - {fileID: 450364564}
   - {fileID: 1712685934}
@@ -5542,11 +5851,11 @@ Transform:
   m_GameObject: {fileID: 570689109}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.5156149, y: 5.494943, z: 0}
-  m_LocalScale: {x: 1.0444388, y: 1.0444388, z: 1.0444388}
+  m_LocalPosition: {x: 24.128506, y: 14.896246, z: 0.468502}
+  m_LocalScale: {x: 0.5227, y: 0.5227, z: 0.5227}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 64678743}
+  m_Father: {fileID: 420045383}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &570689111
 SpriteRenderer:
@@ -5687,9 +5996,7 @@ Transform:
   m_LocalPosition: {x: 19.98, y: 11.186246, z: 0.468502}
   m_LocalScale: {x: 0.42548, y: 0.42548, z: 0.42548}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1647898687}
-  - {fileID: 1604419965}
+  m_Children: []
   m_Father: {fileID: 420045383}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &644231146
@@ -5776,9 +6083,7 @@ Transform:
   m_LocalPosition: {x: 4.57, y: 12.006246, z: 0.468502}
   m_LocalScale: {x: 0.36137196, y: 0.36137196, z: 0.36137196}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1744397580}
-  - {fileID: 1098920093}
+  m_Children: []
   m_Father: {fileID: 420045383}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &665073995
@@ -5886,11 +6191,11 @@ Transform:
   m_GameObject: {fileID: 696625673}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.7184198, y: 3.0372057, z: 0}
-  m_LocalScale: {x: 0.97380376, y: 0.97380376, z: 0.97380376}
+  m_LocalPosition: {x: 24.230001, y: 13.666246, z: 0.468502}
+  m_LocalScale: {x: 0.48735, y: 0.48735, z: 0.48735}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 64678743}
+  m_Father: {fileID: 420045383}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &696625675
 SpriteRenderer:
@@ -6267,8 +6572,7 @@ Transform:
   m_LocalPosition: {x: 9.568506, y: 11.286245, z: 0.468502}
   m_LocalScale: {x: 0.33709, y: 0.68092185, z: 0.33709}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1333239916}
+  m_Children: []
   m_Father: {fileID: 420045383}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &991930608
@@ -6369,11 +6673,11 @@ Transform:
   m_GameObject: {fileID: 1098920092}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.7025819, y: 7.692907, z: 0}
-  m_LocalScale: {x: 1.3056741, y: 1.0550902, z: 1.0550902}
+  m_LocalPosition: {x: 4.316107, y: 14.786246, z: 0.468502}
+  m_LocalScale: {x: 0.471834, y: 0.38128, z: 0.38128}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 644231148}
+  m_Father: {fileID: 420045383}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1098920094
 SpriteRenderer:
@@ -11502,11 +11806,11 @@ Transform:
   m_GameObject: {fileID: 1333239915}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.758908, y: -0.45937642, z: 0}
-  m_LocalScale: {x: 1.1029743, y: 0.8872936, z: 1.1029743}
+  m_LocalPosition: {x: 10.498507, y: 10.973446, z: 0.468502}
+  m_LocalScale: {x: 0.37180158, y: 0.6041776, z: 0.37180158}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 976799096}
+  m_Father: {fileID: 420045383}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1333239917
 SpriteRenderer:
@@ -16612,11 +16916,11 @@ Transform:
   m_GameObject: {fileID: 1587705728}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.9174013, y: 5.0654874, z: 0}
-  m_LocalScale: {x: 1.3898102, y: 1.3898102, z: 1.3898102}
+  m_LocalPosition: {x: -3.250001, y: 14.546246, z: 0.468502}
+  m_LocalScale: {x: 0.5669, y: 0.5669, z: 0.5669}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2109389238}
+  m_Father: {fileID: 420045383}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1587705730
 SpriteRenderer:
@@ -16754,11 +17058,11 @@ Transform:
   m_GameObject: {fileID: 1604419963}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.4553723, y: 6.627807, z: 0}
-  m_LocalScale: {x: 0.64273685, y: 0.48508444, z: 0.48508444}
+  m_LocalPosition: {x: 18.509808, y: 14.006246, z: 0.468502}
+  m_LocalScale: {x: 0.27347168, y: 0.20639373, z: 0.20639373}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 638015263}
+  m_Father: {fileID: 420045383}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1612254574
 GameObject:
@@ -16873,11 +17177,11 @@ Transform:
   m_GameObject: {fileID: 1629675099}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.5787024, y: 8.755727, z: 0}
-  m_LocalScale: {x: 1.6880126, y: 1.6880126, z: 1.6880126}
+  m_LocalPosition: {x: 10.818506, y: 12.906246, z: 0.468502}
+  m_LocalScale: {x: 0.5227, y: 0.5227, z: 0.5227}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 213283139}
+  m_Father: {fileID: 420045383}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1629675101
 SpriteRenderer:
@@ -16960,11 +17264,11 @@ Transform:
   m_GameObject: {fileID: 1647898686}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.8544683, y: 4.8885956, z: 0}
-  m_LocalScale: {x: 1.6439784, y: 1.6439784, z: 1.6439784}
+  m_LocalPosition: {x: 18.34, y: 13.266246, z: 0.468502}
+  m_LocalScale: {x: 0.69947994, y: 0.69947994, z: 0.69947994}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 638015263}
+  m_Father: {fileID: 420045383}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1647898688
 SpriteRenderer:
@@ -17047,11 +17351,11 @@ Transform:
   m_GameObject: {fileID: 1700448954}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.8405445, y: 4.2991405, z: 0}
-  m_LocalScale: {x: 1.4018341, y: 1.4018341, z: 1.4018341}
+  m_LocalPosition: {x: 10.899587, y: 11.526246, z: 0.468502}
+  m_LocalScale: {x: 0.43408367, y: 0.43408367, z: 0.43408367}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 213283139}
+  m_Father: {fileID: 420045383}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1700448956
 SpriteRenderer:
@@ -17221,11 +17525,11 @@ Transform:
   m_GameObject: {fileID: 1744397579}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7471539, y: 9.491607, z: 0}
-  m_LocalScale: {x: 0.98170316, y: 0.98170316, z: 0.98170316}
+  m_LocalPosition: {x: 4.8400006, y: 15.436246, z: 0.468502}
+  m_LocalScale: {x: 0.35476, y: 0.35476, z: 0.35476}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 644231148}
+  m_Father: {fileID: 420045383}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1744397581
 SpriteRenderer:
@@ -22287,11 +22591,11 @@ Transform:
   m_GameObject: {fileID: 1912470344}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.7001661, y: 4.452588, z: 0}
-  m_LocalScale: {x: 1.5784271, y: 1.5784271, z: 1.5784271}
+  m_LocalPosition: {x: -2.7534933, y: 14.296246, z: 0.468502}
+  m_LocalScale: {x: 0.6438363, y: 0.6438363, z: 0.6438363}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2109389238}
+  m_Father: {fileID: 420045383}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1912470346
 SpriteRenderer:
@@ -22519,9 +22823,7 @@ Transform:
   m_LocalPosition: {x: -2.06, y: 12.480046, z: 0.468502}
   m_LocalScale: {x: 0.4078974, y: 0.4078974, z: 0.4078974}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1587705729}
-  - {fileID: 1912470345}
+  m_Children: []
   m_Father: {fileID: 420045383}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2119601877
