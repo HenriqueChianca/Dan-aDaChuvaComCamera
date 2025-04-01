@@ -169,7 +169,7 @@ BoxCollider2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
+  m_LayerOverridePriority: 20
   m_ForceSendLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -216,10 +216,10 @@ MonoBehaviour:
     - collisionThreshold: 1
       targetColor: {r: 1, g: 0, b: 0, a: 1}
       newScaleY: 1
-    - collisionThreshold: 5
+    - collisionThreshold: 10
       targetColor: {r: 1, g: 0.83413935, b: 0, a: 1}
       newScaleY: 1
-    - collisionThreshold: 10
+    - collisionThreshold: 20
       targetColor: {r: 0.34229445, g: 1, b: 0, a: 1}
       newScaleY: 1
     childMeshRenderer: {fileID: 0}
@@ -9408,7 +9408,7 @@ ParticleSystem:
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
-    collisionMessages: 0
+    collisionMessages: 1
     collidesWithDynamic: 1
     interiorCollisions: 0
   TriggerModule:
@@ -10492,7 +10492,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 20
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
