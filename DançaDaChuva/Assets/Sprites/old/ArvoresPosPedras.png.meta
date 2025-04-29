@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ArvoresPosPedras_0: 1104483789242222162
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

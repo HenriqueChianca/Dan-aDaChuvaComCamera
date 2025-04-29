@@ -347,7 +347,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ComplementSuperGrassBase_0: -8918398458829656778
+      ComplementSuperGrassBase_1: -4738427303861088275
+      ComplementSuperGrassBase_2: 5924758601576103403
+      ComplementSuperGrassBase_3: -810399255923989532
+      ComplementSuperGrassBase_4: -4577913254686097085
+      ComplementSuperGrassBase_5: -6056610487170558256
+      ComplementSuperGrassBase_6: -2836658205175641276
+      ComplementSuperGrassBase_7: -8229987776636784108
+      ComplementSuperGrassBase_8: -1812246861262846000
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -347,7 +347,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ArvoreRealista7_0: -684306371433047824
+      ArvoreRealista7_1: 4739653832481811808
+      ArvoreRealista7_2: -7786387519446158455
+      ArvoreRealista7_3: -4690596371948869840
+      ArvoreRealista7_4: 3722009592922982577
+      ArvoreRealista7_5: 7931114758342688828
+      ArvoreRealista7_6: 4296784218665097356
+      ArvoreRealista7_7: 3309802831996560927
+      ArvoreRealista7_8: 842493680941736941
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

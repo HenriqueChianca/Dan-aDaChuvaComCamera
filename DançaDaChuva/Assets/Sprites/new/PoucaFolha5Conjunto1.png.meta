@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PoucaFolha5Conjunto1_0: 6690201898448479829
+      PoucaFolha5Conjunto1_1: -2630257125729431726
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -25,6 +25,10 @@ public class SceneRestartTimer : MonoBehaviour
 
         if (restartTimer <= 0f)
         {
+            // Antes de recarregar, para a câmera
+            StopCameraIfExists();
+
+            // Agora recarrega
             SceneManager.LoadScene("Game");
         }
     }
@@ -34,6 +38,15 @@ public class SceneRestartTimer : MonoBehaviour
         if (timerText != null)
         {
             timerText.text = "Reiniciando em " + Mathf.CeilToInt(restartTimer) + " segundos";
+        }
+    }
+
+    void StopCameraIfExists()
+    {
+        var cameraSelector = FindObjectOfType<CameraMovement>();
+        if (cameraSelector != null)
+        {
+            cameraSelector.StopCamera();
         }
     }
 }

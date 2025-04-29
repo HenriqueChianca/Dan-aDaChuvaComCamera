@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AntesPedra2_0: -9180705976199734220
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
