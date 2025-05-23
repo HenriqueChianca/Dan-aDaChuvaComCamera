@@ -1,121 +1,162 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class CameraMovement : MonoBehaviour
 {
-    public RawImage rawImageDisplay;
-    private WebCamTexture webcamTexture;
+    public static CameraMovement Instance;
+
+
+    private WebCamTexture webCamTexture;
+    public RawImage rawImage; // Arraste a RawImage aqui no Inspector
+    private string preferredCameraName = "PS3 Eye Universal"; // Nome exato da PS3 Eye
+    private bool tryingToReconnect = false;
 
     void Start()
     {
-        StartCoroutine(FindAndStartCamera());
+        LogAvailableCameras(); // Apenas para debug
+        InitializeCamera();
     }
 
-    IEnumerator FindAndStartCamera()
+
+    void Awake()
+    {
+        // Singleton e persistência
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        // Reconecta RawImage sempre que a cena carregar
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Se a cena foi recarregada, encontra o novo RawImage e reaplica a textura
+        if (rawImage == null)
+            rawImage = FindObjectOfType<RawImage>();
+
+        if (rawImage != null && webCamTexture != null)
+        {
+            rawImage.texture = webCamTexture;
+            rawImage.material.mainTexture = webCamTexture;
+        }
+    }
+
+
+
+    void LogAvailableCameras()
+    {
+        WebCamDevice[] devices = WebCamTexture.devices;
+        if (devices.Length == 0)
+        {
+            Debug.LogWarning("Nenhuma câmera detectada no sistema.");
+        }
+        else
+        {
+            for (int i = 0; i < devices.Length; i++)
+            {
+                Debug.Log($"[CAMERA DETECTADA {i}] Nome: {devices[i].name}");
+            }
+        }
+    }
+
+    void InitializeCamera()
     {
         WebCamDevice[] devices = WebCamTexture.devices;
 
         if (devices.Length == 0)
         {
-            Debug.LogError("Nenhuma câmera encontrada.");
-            yield break;
+            Debug.LogError("Nenhuma câmera foi encontrada!");
+            return;
         }
 
-        // Primeiro: tenta encontrar e iniciar a PS3 Eye
+        // Procura pela câmera preferida primeiro
         foreach (var device in devices)
         {
-            Debug.Log("Câmera encontrada: " + device.name);
-
-            if (device.name.ToLower().Contains("ps3"))
+            if (device.name == preferredCameraName)
             {
-                Debug.Log("Tentando iniciar PS3 Eye: " + device.name);
-
-                if (TryStartCamera(device.name))
-                {
-                    yield break; // sucesso, então sai
-                }
+                Debug.Log("Usando câmera preferida: " + device.name);
+                StartCamera(device.name);
+                return;
             }
         }
 
-        Debug.LogWarning("Nenhuma PS3 Eye encontrada. Procurando outra câmera USB...");
-
-        // Segundo: tenta qualquer outra câmera que não seja virtual
-        foreach (var device in devices)
-        {
-            string lowerName = device.name.ToLower();
-
-            if (lowerName.Contains("virtual") || lowerName.Contains("droidcam") || lowerName.Contains("obs"))
-            {
-                Debug.Log("Ignorando câmera virtual: " + device.name);
-                continue; // ignora câmeras virtuais
-            }
-
-            Debug.Log("Tentando iniciar outra câmera USB: " + device.name);
-
-            if (TryStartCamera(device.name))
-            {
-                yield break; // sucesso, então sai
-            }
-        }
-
-        Debug.LogError("Nenhuma câmera válida foi encontrada e iniciada.");
+        // Se não encontrou a câmera preferida, usa a primeira disponível
+        Debug.LogWarning("Câmera preferida não encontrada. Usando a primeira disponível: " + devices[0].name);
+        StartCamera(devices[0].name);
     }
 
-    bool TryStartCamera(string deviceName)
+    void StartCamera(string deviceName)
     {
-        webcamTexture = new WebCamTexture(deviceName);
-        webcamTexture.Play();
-
-        // Dá um tempinho para inicializar
-        float timeout = 2f;
-        float timer = 0f;
-
-        while (timer < timeout)
+        // Para e limpa a anterior, se houver
+        if (webCamTexture != null)
         {
-            if (webcamTexture.width > 16 && webcamTexture.height > 16 && webcamTexture.didUpdateThisFrame)
-            {
-                Debug.Log("Câmera iniciada com sucesso: " + deviceName);
+            if (webCamTexture.isPlaying)
+                webCamTexture.Stop();
 
-                if (rawImageDisplay == null)
-                {
-                    rawImageDisplay = FindObjectOfType<RawImage>();
-                    if (rawImageDisplay == null)
-                    {
-                        Debug.LogError("Nenhuma RawImage encontrada para mostrar a câmera.");
-                        return false;
-                    }
-                }
-
-                rawImageDisplay.texture = webcamTexture;
-                rawImageDisplay.material.mainTexture = webcamTexture;
-                return true;
-            }
-
-            timer += Time.deltaTime;
+            Destroy(webCamTexture);
+            webCamTexture = null;
         }
 
-        // Se não conseguir inicializar direito
-        Debug.LogWarning("Falha ao iniciar a câmera: " + deviceName);
-        webcamTexture.Stop();
-        return false;
+        webCamTexture = new WebCamTexture(deviceName);
+        rawImage.texture = webCamTexture;
+        rawImage.material.mainTexture = webCamTexture;
+
+        webCamTexture.Play();
+
+        Debug.Log("Iniciada câmera: " + deviceName);
+
+        if (!tryingToReconnect)
+        {
+            StartCoroutine(CheckCameraConnection());
+        }
     }
 
-    void OnDisable()
+    IEnumerator CheckCameraConnection()
     {
-        if (webcamTexture != null && webcamTexture.isPlaying)
+        tryingToReconnect = true;
+
+        while (true)
         {
-            webcamTexture.Stop();
+            yield return new WaitForSeconds(2f);
+
+            if (webCamTexture == null || !webCamTexture.isPlaying || webCamTexture.width <= 16)
+            {
+                Debug.LogWarning("Câmera travou ou não iniciou. Tentando reiniciar...");
+                InitializeCamera(); // Tenta reiniciar
+                break;
+            }
         }
+
+        tryingToReconnect = false;
+    }
+
+    public void ForceReconnectCamera()
+    {
+        Debug.Log("Forçando reconexão da câmera...");
+        InitializeCamera();
     }
 
     public void StopCamera()
     {
-        if (webcamTexture != null && webcamTexture.isPlaying)
+        if (webCamTexture != null && webCamTexture.isPlaying)
         {
-            webcamTexture.Stop();
-            Debug.Log("Câmera parada antes de reiniciar a cena.");
+            webCamTexture.Stop();
+            Debug.Log("Câmera parada manualmente.");
         }
     }
-
 }
