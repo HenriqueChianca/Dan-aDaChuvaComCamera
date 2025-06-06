@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CameraInitializer : MonoBehaviour
 {
-    void Start()
+   /* void Start()
     {
         CameraMovement cameraMovement = FindObjectOfType<CameraMovement>();
         if (cameraMovement != null)
@@ -14,5 +14,5 @@ public class CameraInitializer : MonoBehaviour
         {
             Debug.LogWarning("Nenhum CameraMovement encontrado na cena.");
         }
-    }
+    }*/
 }

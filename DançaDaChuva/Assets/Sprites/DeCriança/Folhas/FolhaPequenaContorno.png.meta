@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FolhaPequenaContorno_0: 8988792025315288334
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

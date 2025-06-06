@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FolhaPequenaCoooor_0: 7610949360399941673
+      FolhaPequenaCoooor_1: -1576602565707143506
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

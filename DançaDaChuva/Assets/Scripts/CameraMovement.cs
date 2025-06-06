@@ -1,162 +1,89 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class CameraMovement : MonoBehaviour
 {
-    public static CameraMovement Instance;
-
-
-    private WebCamTexture webCamTexture;
-    public RawImage rawImage; // Arraste a RawImage aqui no Inspector
-    private string preferredCameraName = "PS3 Eye Universal"; // Nome exato da PS3 Eye
-    private bool tryingToReconnect = false;
-
-    void Start()
-    {
-        LogAvailableCameras(); // Apenas para debug
-        InitializeCamera();
-    }
-
+    public RawImage rawImage; // Arraste no Inspector se estiver na cena Game.
+    public string preferredDeviceName /*= ""*/; // Nome opcional da câmera.
+    private WebCamTexture webcamTexture;
 
     void Awake()
     {
-        // Singleton e persistência
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-            return;
-        }
-
-        // Reconecta RawImage sempre que a cena carregar
-        SceneManager.sceneLoaded += OnSceneLoaded;
+        print("eu existo");
+        DontDestroyOnLoad(gameObject); // Se quer manter entre cenas.
     }
 
-    void OnDestroy()
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        print("OnEnable chamado, registrando OnSceneLoaded.");
+    }
+
+    void OnDisable()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    //void Start()
     {
-        // Se a cena foi recarregada, encontra o novo RawImage e reaplica a textura
-        if (rawImage == null)
-            rawImage = FindObjectOfType<RawImage>();
-
-        if (rawImage != null && webCamTexture != null)
+        if (scene.name == "Game")
         {
-            rawImage.texture = webCamTexture;
-            rawImage.material.mainTexture = webCamTexture;
+            print("tentando inicializar a camera");
+            StartCamera(preferredDeviceName);
         }
-    }
-
-
-
-    void LogAvailableCameras()
-    {
-        WebCamDevice[] devices = WebCamTexture.devices;
-        if (devices.Length == 0)
-        {
-            Debug.LogWarning("Nenhuma câmera detectada no sistema.");
-        }
+           
+        
         else
         {
-            for (int i = 0; i < devices.Length; i++)
-            {
-                Debug.Log($"[CAMERA DETECTADA {i}] Nome: {devices[i].name}");
-            }
+            StopCamera();
+            //Destroy(gameObject); // Destroi o objeto se não for mais necessário.
         }
     }
 
-    void InitializeCamera()
+    public void StartCamera(string deviceName)
     {
-        WebCamDevice[] devices = WebCamTexture.devices;
+        if (webcamTexture != null && webcamTexture.isPlaying)
+            return; // Já está rodando.
 
+        WebCamDevice[] devices = WebCamTexture.devices;
+        print(webcamTexture);
         if (devices.Length == 0)
         {
-            Debug.LogError("Nenhuma câmera foi encontrada!");
+            Debug.LogWarning("Nenhuma câmera detectada!");
             return;
         }
 
-        // Procura pela câmera preferida primeiro
-        foreach (var device in devices)
+        string selectedDevice = deviceName;
+        if (string.IsNullOrEmpty(deviceName))
         {
-            if (device.name == preferredCameraName)
-            {
-                Debug.Log("Usando câmera preferida: " + device.name);
-                StartCamera(device.name);
-                return;
-            }
+            selectedDevice = devices[0].name; // Pega a primeira disponível.
         }
 
-        // Se não encontrou a câmera preferida, usa a primeira disponível
-        Debug.LogWarning("Câmera preferida não encontrada. Usando a primeira disponível: " + devices[0].name);
-        StartCamera(devices[0].name);
-    }
+        webcamTexture = new WebCamTexture(selectedDevice);
+        webcamTexture.Play();
 
-    void StartCamera(string deviceName)
-    {
-        // Para e limpa a anterior, se houver
-        if (webCamTexture != null)
+        /*if (rawImage != null)*/
+        print("tentando pegar a rawImage");
+        rawImage.texture = webcamTexture;
+        
+        /*else
         {
-            if (webCamTexture.isPlaying)
-                webCamTexture.Stop();
-
-            Destroy(webCamTexture);
-            webCamTexture = null;
-        }
-
-        webCamTexture = new WebCamTexture(deviceName);
-        rawImage.texture = webCamTexture;
-        rawImage.material.mainTexture = webCamTexture;
-
-        webCamTexture.Play();
-
-        Debug.Log("Iniciada câmera: " + deviceName);
-
-        if (!tryingToReconnect)
-        {
-            StartCoroutine(CheckCameraConnection());
-        }
-    }
-
-    IEnumerator CheckCameraConnection()
-    {
-        tryingToReconnect = true;
-
-        while (true)
-        {
-            yield return new WaitForSeconds(2f);
-
-            if (webCamTexture == null || !webCamTexture.isPlaying || webCamTexture.width <= 16)
-            {
-                Debug.LogWarning("Câmera travou ou não iniciou. Tentando reiniciar...");
-                InitializeCamera(); // Tenta reiniciar
-                break;
-            }
-        }
-
-        tryingToReconnect = false;
-    }
-
-    public void ForceReconnectCamera()
-    {
-        Debug.Log("Forçando reconexão da câmera...");
-        InitializeCamera();
+            Debug.LogWarning("RawImage não atribuído na cena atual.");
+        }*/
     }
 
     public void StopCamera()
     {
-        if (webCamTexture != null && webCamTexture.isPlaying)
+        if (webcamTexture != null)
         {
-            webCamTexture.Stop();
-            Debug.Log("Câmera parada manualmente.");
+            if (webcamTexture.isPlaying)
+                webcamTexture.Stop();
+
+            webcamTexture = null;
         }
     }
+
+
 }

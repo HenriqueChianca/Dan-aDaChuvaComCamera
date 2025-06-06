@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FolhaJunta2Contorno_0: 9135445279715579411
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
