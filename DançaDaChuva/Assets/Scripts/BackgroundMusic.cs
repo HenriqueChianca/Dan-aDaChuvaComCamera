@@ -1,8 +1,14 @@
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class BackgroundMusic : MonoBehaviour
 {
     private static BackgroundMusic instance;
+
+    [Header("Áudio de Fundo")]
+    public AudioClip musicClip;
+
+    private AudioSource audioSource;
 
     void Awake()
     {
@@ -14,14 +20,27 @@ public class BackgroundMusic : MonoBehaviour
         }
         instance = this;
         DontDestroyOnLoad(gameObject);
+
+        // Pega ou adiciona o AudioSource
+        audioSource = GetComponent<AudioSource>();
+
+        if (audioSource == null)
+            audioSource = gameObject.AddComponent<AudioSource>();
+
+        audioSource.loop = true;
     }
 
     void Start()
     {
-        AudioSource audio = GetComponent<AudioSource>();
-        if (audio != null && !audio.isPlaying)
+        if (musicClip != null)
         {
-            audio.Play();
+            audioSource.clip = musicClip;
+            if (!audioSource.isPlaying)
+                audioSource.Play();
+        }
+        else
+        {
+            Debug.LogWarning("Nenhuma música atribuída no Inspector.");
         }
     }
 }
