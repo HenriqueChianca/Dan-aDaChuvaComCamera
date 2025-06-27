@@ -1,6 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class GameStateManager : MonoBehaviour
 {
@@ -14,6 +12,9 @@ public class GameStateManager : MonoBehaviour
     public float resetDelay = 3f;
 
     private bool gameEnded = false;
+
+    [Header("Referência do SpriteColorController")]
+    public SpriteColorController colorController;
 
     void Awake()
     {
@@ -39,8 +40,12 @@ public class GameStateManager : MonoBehaviour
 
         gameEnded = true;
         if (winCanvas != null) winCanvas.SetActive(true);
-        Debug.Log("Vitória! O jogo vai reiniciar em " + resetDelay + " segundos.");
-        Invoke("RestartGame", resetDelay);
+        Debug.Log("Vitória! Loop vai reiniciar em " + resetDelay + " segundos.");
+
+        if (colorController != null)
+        {
+            colorController.ResetInvisible(resetDelay);
+        }
     }
 
     public void OnLoseCondition()
@@ -49,13 +54,24 @@ public class GameStateManager : MonoBehaviour
 
         gameEnded = true;
         if (loseCanvas != null) loseCanvas.SetActive(true);
-        Debug.Log("Derrota! O jogo vai reiniciar em " + resetDelay + " segundos.");
-        Invoke("RestartGame", resetDelay);
+        Debug.Log("Derrota! Loop vai reiniciar em " + resetDelay + " segundos.");
+
+        if (colorController != null)
+        {
+            colorController.ResetInvisible(resetDelay);
+        }
     }
 
-    private void RestartGame()
+    public void RestartGameState()
     {
-        Debug.Log("Reiniciando a cena atual...");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        gameEnded = false;
+        if (winCanvas != null) winCanvas.SetActive(false);
+        if (loseCanvas != null) loseCanvas.SetActive(false);
+    }
+
+    // Método adicional necessário para o SpriteColorController
+    public void ResetGameUI()
+    {
+        RestartGameState();
     }
 }

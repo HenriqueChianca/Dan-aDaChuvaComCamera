@@ -1,10 +1,13 @@
-﻿using System.Collections;
+﻿// SpriteColorController.cs
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class SpriteColorController : MonoBehaviour
 {
+    public static SpriteColorController Instance { get; private set; }
+
     [System.Serializable]
     public class ColorPhase
     {
@@ -42,20 +45,17 @@ public class SpriteColorController : MonoBehaviour
     [Header("RawImage (opcional) para câmera")]
     public RawImage rawImageDisplay;
 
-    // Internos: sprites
     private Dictionary<SpriteRenderer, int> collisionCounts = new();
     private Dictionary<SpriteRenderer, int> currentPhaseIndex = new();
     private Dictionary<SpriteRenderer, Vector3> originalPositions = new();
     private Dictionary<SpriteRenderer, float> lastAdvanceTime = new();
 
-    // Internos: controle de tempo e estado
     private float regressionTimer = 0f;
     private float winTimer = 0f;
     private float loseTimer = 0f;
     private bool hasCollided = false;
     private bool isPaused = false;
 
-    // Internos: movimento e câmera
     private Vector2 lastMousePosition;
     private int movementCount = 0;
     private float inactivityTimer = 0f;
@@ -66,9 +66,18 @@ public class SpriteColorController : MonoBehaviour
     private Color32[] previousFrame;
     private Color32[] currentFrame;
 
+    private bool inResetCycle = false;
+
+    void Awake()
+    {
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(gameObject);
+    }
+
     void Start()
     {
-        // Inicialização dos sprites
         foreach (var spriteInfo in spriteColorList)
         {
             if (spriteInfo?.spriteRenderer == null) continue;
@@ -83,10 +92,8 @@ public class SpriteColorController : MonoBehaviour
                 sr.color = spriteInfo.colorPhases[0].targetColor;
         }
 
-        // Inicializa mouse
         lastMousePosition = Input.mousePosition;
 
-        // Inicializa câmera
         if (WebCamTexture.devices.Length > 0)
         {
             WebCamDevice device = WebCamTexture.devices[0];
@@ -100,7 +107,6 @@ public class SpriteColorController : MonoBehaviour
             }
         }
 
-        // Inicializa partículas
         if (targetParticleSystem != null)
         {
             var emission = targetParticleSystem.emission;
@@ -111,7 +117,7 @@ public class SpriteColorController : MonoBehaviour
 
     void Update()
     {
-        if (isPaused) return;
+        if (isPaused || inResetCycle) return;
 
         bool moved = DetectMouseMovement() | DetectCameraMovement();
 
@@ -125,15 +131,12 @@ public class SpriteColorController : MonoBehaviour
                 activationCoroutine = StartCoroutine(ActivateAfterDelay());
             }
         }
-        else
+        else if (isEmitting)
         {
-            if (isEmitting)
+            inactivityTimer += Time.deltaTime;
+            if (inactivityTimer >= inactivityThreshold)
             {
-                inactivityTimer += Time.deltaTime;
-                if (inactivityTimer >= inactivityThreshold)
-                {
-                    DeactivateParticleSystem();
-                }
+                DeactivateParticleSystem();
             }
         }
 
@@ -158,31 +161,22 @@ public class SpriteColorController : MonoBehaviour
                 allAtInitial = false;
         }
 
-        // Vitória
         if (allAtFinal)
         {
             winTimer += Time.deltaTime;
             if (winTimer >= winDelay)
-            {
-                Debug.Log("[Unified] Vitória!");
                 GameStateManager.Instance.OnWinCondition();
-            }
         }
         else winTimer = 0f;
 
-        // Derrota
         if (allAtInitial && hasCollided)
         {
             loseTimer += Time.deltaTime;
             if (loseTimer >= loseDelay)
-            {
-                Debug.Log("[Unified] Derrota!");
                 GameStateManager.Instance.OnLoseCondition();
-            }
         }
         else loseTimer = 0f;
 
-        // Regressão
         if (!allAtFinal)
         {
             regressionTimer += Time.deltaTime;
@@ -191,10 +185,9 @@ public class SpriteColorController : MonoBehaviour
                 foreach (var spriteInfo in spriteColorList)
                 {
                     if (spriteInfo?.spriteRenderer == null) continue;
-                    var sr = spriteInfo.spriteRenderer;
-                    int currentIndex = currentPhaseIndex[sr];
 
-                    if (currentIndex > 0)
+                    var sr = spriteInfo.spriteRenderer;
+                    if (currentPhaseIndex[sr] > 0)
                     {
                         currentPhaseIndex[sr]--;
                         var phase = spriteInfo.colorPhases[currentPhaseIndex[sr]];
@@ -202,8 +195,6 @@ public class SpriteColorController : MonoBehaviour
                         sr.transform.localScale = new Vector3(sr.transform.localScale.x, phase.newScaleY, sr.transform.localScale.z);
                         sr.transform.position = originalPositions[sr];
                         collisionCounts[sr] = 0;
-
-                        Debug.Log($"[Unified] Regressão sprite {sr.name} -> fase {currentPhaseIndex[sr]}");
                     }
                 }
                 regressionTimer = 0f;
@@ -214,23 +205,22 @@ public class SpriteColorController : MonoBehaviour
 
     void OnParticleCollision(GameObject other)
     {
-        if (isPaused) return;
+        if (isPaused || inResetCycle) return;
 
         hasCollided = true;
 
         foreach (var spriteInfo in spriteColorList)
         {
             if (spriteInfo?.spriteRenderer == null) continue;
+
             var sr = spriteInfo.spriteRenderer;
-
             collisionCounts[sr]++;
-            int index = currentPhaseIndex[sr];
 
-            if (index < spriteInfo.colorPhases.Count &&
+            if (currentPhaseIndex[sr] < spriteInfo.colorPhases.Count &&
                 Time.time - lastAdvanceTime[sr] >= minAdvanceCooldown &&
-                collisionCounts[sr] >= spriteInfo.colorPhases[index].collisionThreshold)
+                collisionCounts[sr] >= spriteInfo.colorPhases[currentPhaseIndex[sr]].collisionThreshold)
             {
-                var phase = spriteInfo.colorPhases[index];
+                var phase = spriteInfo.colorPhases[currentPhaseIndex[sr]];
                 sr.color = phase.targetColor;
                 sr.transform.localScale = new Vector3(sr.transform.localScale.x, phase.newScaleY, sr.transform.localScale.z);
                 sr.transform.position = originalPositions[sr];
@@ -238,8 +228,6 @@ public class SpriteColorController : MonoBehaviour
                 currentPhaseIndex[sr]++;
                 collisionCounts[sr] = 0;
                 lastAdvanceTime[sr] = Time.time;
-
-                Debug.Log($"[Unified] Sprite {sr.name} avançou para fase {currentPhaseIndex[sr]}");
             }
         }
     }
@@ -271,8 +259,7 @@ public class SpriteColorController : MonoBehaviour
         {
             Color32 c = currentFrame[i];
             Color32 p = previousFrame[i];
-            float diff = Mathf.Abs(c.r - p.r) + Mathf.Abs(c.g - p.g) + Mathf.Abs(c.b - p.b);
-            totalDiff += diff / 3f;
+            totalDiff += Mathf.Abs(c.r - p.r) + Mathf.Abs(c.g - p.g) + Mathf.Abs(c.b - p.b);
         }
 
         currentFrame.CopyTo(previousFrame, 0);
@@ -288,7 +275,6 @@ public class SpriteColorController : MonoBehaviour
             emission.enabled = true;
             targetParticleSystem.Play();
             isEmitting = true;
-            Debug.Log("[Unified] ParticleSystem ativado");
         }
         activationCoroutine = null;
     }
@@ -300,7 +286,6 @@ public class SpriteColorController : MonoBehaviour
             var emission = targetParticleSystem.emission;
             emission.enabled = false;
             targetParticleSystem.Stop();
-            Debug.Log("[Unified] ParticleSystem desativado por inatividade");
         }
         isEmitting = false;
         movementCount = 0;
@@ -316,4 +301,105 @@ public class SpriteColorController : MonoBehaviour
     {
         isPaused = paused;
     }
-}
+
+    public void StartResetCycle()
+    {
+        inResetCycle = true;
+
+        foreach (var spriteInfo in spriteColorList)
+        {
+            if (spriteInfo?.spriteRenderer != null)
+                spriteInfo.spriteRenderer.enabled = false;
+        }
+
+        if (rawImageDisplay != null)
+            rawImageDisplay.enabled = false;
+
+        StartCoroutine(ResetSpritesCoroutine());
+    }
+
+    public void EndResetCycle()
+    {
+        foreach (var spriteInfo in spriteColorList)
+        {
+            if (spriteInfo?.spriteRenderer != null)
+                spriteInfo.spriteRenderer.enabled = true;
+        }
+
+        if (rawImageDisplay != null)
+            rawImageDisplay.enabled = true;
+
+        hasCollided = false;
+        movementCount = 0;
+        inactivityTimer = 0f;
+        inResetCycle = false;
+
+        foreach (var sr in currentPhaseIndex.Keys)
+            currentPhaseIndex[sr] = 0;
+    }
+
+    IEnumerator ResetSpritesCoroutine()
+    {
+        foreach (var spriteInfo in spriteColorList)
+        {
+            if (spriteInfo?.spriteRenderer == null) continue;
+            var sr = spriteInfo.spriteRenderer;
+
+            while (currentPhaseIndex[sr] > 0)
+            {
+                currentPhaseIndex[sr]--;
+                var phase = spriteInfo.colorPhases[currentPhaseIndex[sr]];
+                sr.color = phase.targetColor;
+                sr.transform.localScale = new Vector3(sr.transform.localScale.x, phase.newScaleY, sr.transform.localScale.z);
+                sr.transform.position = originalPositions[sr];
+                yield return new WaitForSeconds(0.1f);
+            }
+        }
+    }
+
+    public void ResetInvisible(float delay)
+    {
+        StartCoroutine(ResetInvisibleCoroutine(delay));
+    }
+
+    private IEnumerator ResetInvisibleCoroutine(float delay)
+    {
+        inResetCycle = true;
+
+        foreach (var spriteInfo in spriteColorList)
+        {
+            if (spriteInfo?.spriteRenderer != null)
+                spriteInfo.spriteRenderer.enabled = false;
+        }
+
+        if (rawImageDisplay != null)
+            rawImageDisplay.enabled = false;
+
+        yield return new WaitForSeconds(delay);
+
+        foreach (var spriteInfo in spriteColorList)
+        {
+            if (spriteInfo?.spriteRenderer != null)
+                spriteInfo.spriteRenderer.enabled = true;
+        }
+
+        if (rawImageDisplay != null)
+            rawImageDisplay.enabled = true;
+
+        hasCollided = false;
+        movementCount = 0;
+        inactivityTimer = 0f;
+        inResetCycle = false;
+
+        List<SpriteRenderer> keysCopy = new List<SpriteRenderer>(currentPhaseIndex.Keys);
+
+        foreach (var sr in keysCopy)
+            currentPhaseIndex[sr] = 0;
+
+        // Correção aqui: reinicia o estado do jogo após o reset
+        if (GameStateManager.Instance != null)
+        {
+            GameStateManager.Instance.ResetGameUI();
+        }
+    }
+    }

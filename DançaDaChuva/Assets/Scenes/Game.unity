@@ -388,23 +388,21 @@ MonoBehaviour:
   - spriteRenderer: {fileID: 447294038}
     colorPhases:
     - collisionThreshold: 2
-      targetColor: {r: 1, g: 0.88059855, b: 0.023584902, a: 1}
+      targetColor: {r: 0.8113208, g: 0.69338876, b: 0.3329477, a: 1}
       newScaleY: 0.368485
-    - collisionThreshold: 2
-      targetColor: {r: 0.16271329, g: 1, b: 0.02352941, a: 1}
+    - collisionThreshold: 10
+      targetColor: {r: 0.4636517, g: 0.735849, b: 0.2950338, a: 1}
       newScaleY: 0.368485
-  - spriteRenderer: {fileID: 0}
-    colorPhases: []
   regressionDelay: 5
-  winDelay: 4
-  loseDelay: 1200
-  minAdvanceCooldown: 2
+  winDelay: 5
+  loseDelay: 5
+  minAdvanceCooldown: 1
   targetParticleSystem: {fileID: 1268763142}
   activationDelay: 0
   movementsNeeded: 10
-  inactivityThreshold: 5
-  mouseMovementThreshold: 10
-  cameraThreshold: 5
+  inactivityThreshold: 3
+  mouseMovementThreshold: 0.05
+  cameraThreshold: 15
   rawImageDisplay: {fileID: 991930610}
 --- !u!1 &213283137
 GameObject:
@@ -12683,6 +12681,7 @@ MonoBehaviour:
   winCanvas: {fileID: 1082183542}
   loseCanvas: {fileID: 1853053482}
   resetDelay: 3
+  colorController: {fileID: 205951908}
 --- !u!1 &1495063583
 GameObject:
   m_ObjectHideFlags: 0
