@@ -6,9 +6,9 @@ public class CameraControlTest : MonoBehaviour
 {
     private WebCamTexture webcamTexture;
     public RawImage rawImageDisplay; // Atribua no Inspector o seu RawImage
-    public string targetSceneName = "Game"; // Nome da cena onde o script deve funcionar
+                                     // public string targetSceneName = "Game"; // Nome da cena onde o script deve funcionar
     public string preferredCameraName = "PS3 Eye Universal"; // Nome preferencial da câmera
-    public string rawImageObjectName = "RawImage";
+    //public string rawImageObjectName = "RawImage";
 
     [Header("Configurações da Câmera")]
     public int requestedWidth = 640;
@@ -19,28 +19,31 @@ public class CameraControlTest : MonoBehaviour
     public bool useAnyAvailableCamera = true; // Usar qualquer câmera se a preferida não for encontrada
     public bool showAvailableDevices = true; // Mostrar dispositivos disponíveis no console
 
-    void OnEnable()
-    {
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
+    private Vector3 initialPosition;
+    private Quaternion initialRotation;
 
-    void OnDisable()
-    {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-    }
+    /* void OnEnable()
+     {
+         SceneManager.sceneLoaded += OnSceneLoaded;
+     }
 
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        if (scene.name == targetSceneName)
-        {
-            FindAndAssignRawImage();
-            InitializeCamera();
-        }
-        else
-        {
-            StopCamera();
-        }
-    }
+     void OnDisable()
+     {
+         SceneManager.sceneLoaded -= OnSceneLoaded;
+     }
+
+     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+     {
+         if (scene.name == targetSceneName)
+         {
+             FindAndAssignRawImage();
+             InitializeCamera();
+         }
+         else
+         {
+             StopCamera();
+         }
+     } */
 
     private void InitializeCamera()
     {
@@ -144,6 +147,21 @@ public class CameraControlTest : MonoBehaviour
         }
     }
 
+
+    void Start()
+    {
+        initialPosition = transform.position;
+        initialRotation = transform.rotation;
+    }
+
+    public void RestartCamera()
+    {
+        transform.position = initialPosition;
+        transform.rotation = initialRotation;
+        Debug.Log("Camera resetada para a posição inicial.");
+    }
+
+
     private void StopCamera()
     {
         if (webcamTexture != null && webcamTexture.isPlaying)
@@ -159,36 +177,42 @@ public class CameraControlTest : MonoBehaviour
     }
 
     // Método público para reiniciar a câmera manualmente se necessário
-    public void RestartCamera()
+  /*  public void RestartCamera()
     {
         StopCamera();
         InitializeCamera();
-    }
+    } */
 
-    private void FindAndAssignRawImage()
-    {
-        // Se já tiver uma referência, não precisa procurar novamente
-        if (rawImageDisplay != null) return;
+    /*   private void FindAndAssignRawImage()
+       {
+           // Se já tiver uma referência, não precisa procurar novamente
+           if (rawImageDisplay != null) return;
 
-        // Procura o RawImage na hierarquia
-        GameObject rawImageObj = GameObject.Find(rawImageObjectName);
+           // Procura o RawImage na hierarquia
+           GameObject rawImageObj = GameObject.Find(rawImageObjectName);
 
-        if (rawImageObj != null)
-        {
-            rawImageDisplay = rawImageObj.GetComponent<RawImage>();
+           if (rawImageObj != null)
+           {
+               rawImageDisplay = rawImageObj.GetComponent<RawImage>();
 
-            if (rawImageDisplay == null)
-            {
-                Debug.LogError($"O objeto '{rawImageObjectName}' encontrado não possui componente RawImage!");
-            }
-            else
-            {
-                Debug.Log($"RawImage '{rawImageObjectName}' atribuído automaticamente.");
-            }
-        }
-        else
-        {
-            Debug.LogError($"Nenhum objeto chamado '{rawImageObjectName}' encontrado na hierarquia!");
-        }
-    }
+               if (rawImageDisplay == null)
+               {
+                   Debug.LogError($"O objeto '{rawImageObjectName}' encontrado não possui componente RawImage!");
+               }
+               else
+               {
+                   Debug.Log($"RawImage '{rawImageObjectName}' atribuído automaticamente.");
+               }
+           }
+           else
+           {
+               Debug.LogError($"Nenhum objeto chamado '{rawImageObjectName}' encontrado na hierarquia!");
+           }
+       } */
+
+   
+
+    
+
+   
 }

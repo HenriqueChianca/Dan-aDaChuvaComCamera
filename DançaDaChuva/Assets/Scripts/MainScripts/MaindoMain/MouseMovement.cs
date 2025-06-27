@@ -1,33 +1,26 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class MouseMovement : MonoBehaviour
 {
-
     [System.Serializable]
-    public class ParticleSystemData
+    public class ParticleSystemData  
     {
-        [Tooltip("Particle System a ser controlado.")]
         public ParticleSystem ps;
-
-        [Tooltip("Delay individual de ativação (em segundos) para este Particle System.")]
         public float activationDelay;
-
-        [HideInInspector]
-        public bool isActive = false;
-
-        [HideInInspector]
-        public Coroutine activationCoroutine = null;
+        [HideInInspector] public bool isActive = false;
+        [HideInInspector] public Coroutine activationCoroutine = null;
     }
 
     [Tooltip("Lista de Particle Systems (com delay individual) a serem controlados pelo movimento do mouse.")]
     public List<ParticleSystemData> particleSystemsData;
 
-    [Tooltip("Tempo em segundos para desativar as partículas após inatividade.")]
+
+    [Tooltip("Tempo em segundos para desativar as partÃ­culas apÃ³s inatividade.")]
     public float inactivityThreshold = 3f;
 
-    [Tooltip("Número de movimentos necessários para iniciar a ativação.")]
+    [Tooltip("NÃºmero de movimentos necessÃ¡rios para iniciar a ativaÃ§Ã£o.")]
     public int movementsNeeded = 10;
 
     private Vector2 lastMousePosition;
@@ -36,7 +29,6 @@ public class MouseMovement : MonoBehaviour
 
     void Start()
     {
-        // Para cada Particle System, garanta que a emissão comece desativada.
         foreach (ParticleSystemData data in particleSystemsData)
         {
             if (data.ps != null)
@@ -53,7 +45,6 @@ public class MouseMovement : MonoBehaviour
     {
         DetectMouseMovement();
 
-        // Se algum sistema estiver ativo, atualiza o timer de inatividade
         bool anyActive = false;
         foreach (ParticleSystemData data in particleSystemsData)
         {

@@ -1,26 +1,50 @@
+using System.Collections.Generic;
 using UnityEngine;
-using System.Collections;
 
 public class RainController : MonoBehaviour
 {
-    [SerializeField] private ParticleSystem rain; // Certifica-se de que podemos atribuir no Inspector
-    [SerializeField] private float startDelay = 15f; // Tempo de espera antes de começar a chover
-
-    private void Start()
+    [System.Serializable]
+    public class ParticleSystemData
     {
-        if (rain == null)
-        {
-            Debug.LogError("Particle System da chuva não foi atribuído! Atribua no Inspector.", this);
-            return;
-        }
-
-        StartCoroutine(StartRainAfterDelay());
+        public ParticleSystem ps;
+        [HideInInspector] public bool isActive = false;
+        [HideInInspector] public Coroutine activationCoroutine = null;
     }
 
-    private IEnumerator StartRainAfterDelay()
+    [Header("Sistemas de Partículas")]
+    public List<ParticleSystemData> particleSystemsData;
+
+    public void ActivateAll()
     {
-        rain.Stop(); // Garante que a chuva começa desativada
-        yield return new WaitForSeconds(startDelay);
-        rain.Play(); // Ativa a chuva após o delay
+        foreach (var data in particleSystemsData)
+        {
+            if (data.ps != null && !data.isActive)
+            {
+                var emission = data.ps.emission;
+                emission.enabled = true;
+                data.ps.Play();
+                data.isActive = true;
+            }
+        }
+    }
+
+    public void DeactivateAll()
+    {
+        foreach (var data in particleSystemsData)
+        {
+            if (data.ps != null && data.isActive)
+            {
+                var emission = data.ps.emission;
+                emission.enabled = false;
+                data.ps.Stop();
+                data.isActive = false;
+
+                if (data.activationCoroutine != null)
+                {
+                    StopCoroutine(data.activationCoroutine);
+                    data.activationCoroutine = null;
+                }
+            }
+        }
     }
 }
