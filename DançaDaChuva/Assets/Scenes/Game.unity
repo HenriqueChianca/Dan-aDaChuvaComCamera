@@ -617,15 +617,15 @@ MonoBehaviour:
     - collisionThreshold: 10
       targetColor: {r: 0.38601622, g: 0.8207547, b: 0.22841759, a: 1}
       newScaleY: 0.5669
-  regressionDelay: 7
-  winDelay: 5
+  regressionDelay: 0.65
+  winDelay: 7
   loseDelay: 6
-  minAdvanceCooldown: 4
+  minAdvanceCooldown: 0.5
   targetParticleSystem: {fileID: 1268763142}
   activationDelay: 0
   movementsNeeded: 10
-  inactivityThreshold: 3
-  mouseMovementThreshold: 10
+  inactivityThreshold: 1
+  mouseMovementThreshold: 1000
   cameraThreshold: 1000
   rawImageDisplay: {fileID: 991930610}
 --- !u!1 &213283137
@@ -7219,7 +7219,7 @@ RectTransform:
   m_GameObject: {fileID: 991930608}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3712, y: 1.3712, z: 1.3712}
+  m_LocalScale: {x: 4.825664, y: 4.825664, z: 4.825664}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1522207017}
@@ -24472,7 +24472,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2119601878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24605,7 +24605,6 @@ SceneRoots:
   - {fileID: 910489154}
   - {fileID: 1522207017}
   - {fileID: 665073998}
-  - {fileID: 2119601879}
   - {fileID: 1833849479}
   - {fileID: 1506546748}
   - {fileID: 1268763143}
@@ -24618,3 +24617,4 @@ SceneRoots:
   - {fileID: 1395236676}
   - {fileID: 1082183546}
   - {fileID: 1853053486}
+  - {fileID: 2119601879}
